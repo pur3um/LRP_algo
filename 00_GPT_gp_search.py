@@ -654,7 +654,7 @@ python -u 00_GPT_gp_search.py \
   > logs/GP_test_log/chair/chair_botorch_main.log 2>&1 &
 
 #@ 다른 format
-python -u 00_GPT_gp_search.py   --root /home/greenx9/nerf-pytorch/LRP_algo   --run_file 00_run_nerf_ranksched_final.py   --config configs/chair.txt   --basedir logs/GP_test   --exp_prefix chair_auto_bo   --n_trials 2   --batch_size 2   --n_init 2   --n_iters 100000   --gpus 0,1   --optimizer aux-sign-auto-cos-inc   --train-scheduler rank_wsd   --test_gpu 2   --deterministic > logs/GP_test_log/chair/chair_botorch_main.log 2>&1 &
+python -u 00_GPT_gp_search.py   --root /home/greenx9/nerf-pytorch/LRP_algo   --run_file 00_run_nerf_ranksched_final.py   --config configs/chair.txt   --basedir logs/GP_test   --exp_prefix chair_auto_bo   --n_trials 2   --batch_size 2   --n_init 2   --n_iters 100000   --gpus 0   --optimizer aux-muon   --train-scheduler exp_decay   --test_gpu 2   --deterministic > logs/GP_test_log/chair/chair_botorch_main.log 2>&1 &
 """
 
 

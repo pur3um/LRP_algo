@@ -1365,7 +1365,7 @@ def config_parser():
     # Muon optimizer options 0.02
     parser.add_argument("--muon_lrate",   type=float, default=5e-4,)
     parser.add_argument("--muon_decay",   type=float, default=0.0,) #=muon_weight_decay
-    parser.add_argument("--muon_momentum",   type=float, default=0.90,)
+    parser.add_argument("--muon_momentum",   type=float, default=0.95,)
     # NEW
     parser.add_argument('--muon_aux_eps', type=float, default=5e-4, help='Epsilon for Muon auxiliary Adam branch.')
     parser.add_argument('--muon_aux_weight_decay', type=float, default=0.0, help='Weight decay for auxiliary Adam in Muon.')
