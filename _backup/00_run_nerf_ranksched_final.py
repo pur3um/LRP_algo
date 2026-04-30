@@ -40,7 +40,10 @@ def parse_pair(value):
         raise ValueError(f"Expected a comma-separated pair like '0.9,0.95', got {value!r}")
     return float(parts[0]), float(parts[1])
 
-
+try:
+    from optims.lr_sign import SingleDeviceSignWithAuxAdam
+except ModuleNotFoundError:
+    SingleDeviceSignWithAuxAdam = None
 from optims.muon import SingleDeviceMuonWithAuxAdam
 from optims.lr_sign10_rsclF import SingleDeviceSign10RsclFWithAuxAdam
 from optims.auto_cos_inc_rank import SingleDeviceAutoCosIncWithAuxAdam
@@ -755,6 +758,13 @@ def _sync_optimizer_schedule_config(optimizer, args, reset_rank_fields=False):
         if args.optimizer == 'aux-muon' or args.optimizer == "muon":
             group['ns_steps'] = int(resolved_ns_steps)
 
+        if args.optimizer == 'aux-sign':
+            group['rank'] = int(getattr(args, '_resolved_fixed_rank', _resolve_fixed_rank(args)))
+            group['oversample'] = int(args.lowrank_oversample)
+            group['n_subspace_iters'] = int(args.lowrank_subspace_iters)
+            group['ns_steps'] = int(resolved_ns_steps)
+            group['lowrank_rescale'] = bool(resolved_rescale)
+
         if args.optimizer in {'aux-sign-auto-cos-inc', 'aux-sign10-rsclF'}:
             group['warmup_steps'] = effective_rank_schedule_steps
             group['rank'] = int(args.lowrank_rank_start)
@@ -960,7 +970,27 @@ def create_nerf(args):
             raise ImportError(
                 "optimizer aux-muon requires optims/muon.py, but that file is missing. "
             )
-        optimizer = SingleDeviceMuonWithAuxAdam(aux_param_groups)
+        optimizer = SingleDeviceSignWithAuxAdam(aux_param_groups)
+        print(
+            f'INFO: Aux sign optimizer configured. Hidden params: {len(muon_params)}, '
+            f'Aux params: {len(adam_params)}.'
+        )
+    elif args.optimizer == 'aux-sign':
+        if SingleDeviceSignWithAuxAdam is None:
+            raise ImportError(
+                "optimizer aux-sign requires optims/lr_sign.py, but that file is missing. "
+                "Use aux-sign-auto-cos-inc or aux-sign10-rsclF, or add optims/lr_sign.py."
+            )
+        aux_param_groups[0].update(
+            dict(
+                rank=int(getattr(args, '_resolved_fixed_rank', _resolve_fixed_rank(args))),
+                oversample=args.lowrank_oversample,
+                n_subspace_iters=args.lowrank_subspace_iters,
+                ns_steps=int(getattr(args, '_resolved_lowrank_ns_steps', _resolve_ns_steps(args))),
+                lowrank_rescale=bool(getattr(args, '_resolved_lowrank_rescale', _resolve_lowrank_rescale(args))),
+            )
+        )
+        optimizer = SingleDeviceSignWithAuxAdam(aux_param_groups)
         print(
             f'INFO: Aux sign optimizer configured. Hidden params: {len(muon_params)}, '
             f'Aux params: {len(adam_params)}.'
@@ -1395,7 +1425,7 @@ def config_parser():
     parser.add_argument("--optimizer",
                         type=str,
                         default='aux-sign-auto-cos-inc',
-                        choices=['adam', 'ori-adam', 'aux-muon', 'muon', 'aux-sign', 'aux-sign-auto-cos-inc', 'aux-sign10-rsclF'],
+                        choices=['adam', 'ori-adam', 'aux-sign', 'aux-sign-auto-cos-inc', 'aux-sign10-rsclF'],
                         )
     
     # 재현성
@@ -1964,6 +1994,7 @@ if __name__=='__main__':
 
 
 """
+--optimizer aux-sign
 --optimizer aux-sign10-rsclF
 
 # 1) 메인 후보: micro-warmup -> stable -> late linear decay
