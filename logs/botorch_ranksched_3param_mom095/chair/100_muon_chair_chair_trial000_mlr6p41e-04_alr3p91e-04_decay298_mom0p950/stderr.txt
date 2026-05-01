@@ -1,0 +1,26 @@
+Traceback (most recent call last):
+  File "/data1/greenx9/LRP_algo/00_run_nerf_ranksched_final.py", line 9, in <module>
+    import torch
+  File "/home/greenx9/miniconda3/envs/lrp/lib/python3.8/site-packages/torch/__init__.py", line 1187, in <module>
+    from .functional import *  # noqa: F403
+  File "/home/greenx9/miniconda3/envs/lrp/lib/python3.8/site-packages/torch/functional.py", line 998, in <module>
+    def tensordot(a, b, dims: int = 2, out: Optional[torch.Tensor] = None):
+  File "/home/greenx9/miniconda3/envs/lrp/lib/python3.8/site-packages/torch/_jit_internal.py", line 876, in _overload
+    _check_overload_body(func)
+  File "/home/greenx9/miniconda3/envs/lrp/lib/python3.8/site-packages/torch/_jit_internal.py", line 849, in _check_overload_body
+    parsed_def = parse_def(func)
+  File "/home/greenx9/miniconda3/envs/lrp/lib/python3.8/site-packages/torch/_sources.py", line 120, in parse_def
+    sourcelines, file_lineno, filename = get_source_lines_and_file(
+  File "/home/greenx9/miniconda3/envs/lrp/lib/python3.8/site-packages/torch/_sources.py", line 23, in get_source_lines_and_file
+    sourcelines, file_lineno = inspect.getsourcelines(obj)
+  File "/home/greenx9/miniconda3/envs/lrp/lib/python3.8/inspect.py", line 979, in getsourcelines
+    lines, lnum = findsource(object)
+  File "/home/greenx9/miniconda3/envs/lrp/lib/python3.8/inspect.py", line 794, in findsource
+    lines = linecache.getlines(file, module.__dict__)
+  File "/home/greenx9/miniconda3/envs/lrp/lib/python3.8/linecache.py", line 47, in getlines
+    return updatecache(filename, module_globals)
+  File "/home/greenx9/miniconda3/envs/lrp/lib/python3.8/linecache.py", line 137, in updatecache
+    lines = fp.readlines()
+  File "/home/greenx9/miniconda3/envs/lrp/lib/python3.8/codecs.py", line 319, in decode
+    def decode(self, input, final=False):
+KeyboardInterrupt

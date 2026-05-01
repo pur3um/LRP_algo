@@ -1,0 +1,13 @@
+Traceback (most recent call last):
+  File "/data1/greenx9/LRP_algo/00_run_nerf_ranksched_final.py", line 9, in <module>
+    import torch
+  File "/home/greenx9/miniconda3/envs/lrp/lib/python3.8/site-packages/torch/__init__.py", line 1239, in <module>
+    from torch import onnx as onnx
+  File "/home/greenx9/miniconda3/envs/lrp/lib/python3.8/site-packages/torch/onnx/__init__.py", line 12, in <module>
+    from . import (  # usort:skip. Keep the order instead of sorting lexicographically
+  File "/home/greenx9/miniconda3/envs/lrp/lib/python3.8/site-packages/torch/onnx/symbolic_opset11.py", line 12, in <module>
+    from torch.onnx import (
+  File "/home/greenx9/miniconda3/envs/lrp/lib/python3.8/site-packages/torch/onnx/utils.py", line 36, in <module>
+    from torch import _C
+  File "<frozen importlib._bootstrap>", line 1035, in _handle_fromlist
+KeyboardInterrupt

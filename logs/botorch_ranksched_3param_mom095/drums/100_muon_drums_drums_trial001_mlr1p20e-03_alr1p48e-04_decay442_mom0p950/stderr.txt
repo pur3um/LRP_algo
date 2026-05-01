@@ -1,0 +1,20 @@
+Traceback (most recent call last):
+  File "/data1/greenx9/LRP_algo/00_run_nerf_ranksched_final.py", line 9, in <module>
+    import torch
+  File "/home/greenx9/miniconda3/envs/lrp/lib/python3.8/site-packages/torch/__init__.py", line 1187, in <module>
+    from .functional import *  # noqa: F403
+  File "/home/greenx9/miniconda3/envs/lrp/lib/python3.8/site-packages/torch/functional.py", line 7, in <module>
+    import torch.backends.opt_einsum as opt_einsum
+  File "/home/greenx9/miniconda3/envs/lrp/lib/python3.8/site-packages/torch/backends/opt_einsum/__init__.py", line 9, in <module>
+    import opt_einsum as _opt_einsum  # type: ignore[import]
+  File "/home/greenx9/miniconda3/envs/lrp/lib/python3.8/site-packages/opt_einsum/__init__.py", line 3, in <module>
+    from opt_einsum import blas, helpers, path_random, paths
+  File "/home/greenx9/miniconda3/envs/lrp/lib/python3.8/site-packages/opt_einsum/path_random.py", line 13, in <module>
+    from opt_einsum import helpers, paths
+  File "<frozen importlib._bootstrap>", line 991, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 975, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 671, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 839, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 971, in get_code
+  File "<frozen importlib._bootstrap_external>", line 640, in _compile_bytecode
+KeyboardInterrupt

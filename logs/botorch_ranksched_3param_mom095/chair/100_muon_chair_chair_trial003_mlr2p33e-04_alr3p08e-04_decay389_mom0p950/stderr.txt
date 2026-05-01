@@ -1,0 +1,29 @@
+Traceback (most recent call last):
+  File "/data1/greenx9/LRP_algo/00_run_nerf_ranksched_final.py", line 9, in <module>
+    import torch
+  File "/home/greenx9/miniconda3/envs/lrp/lib/python3.8/site-packages/torch/__init__.py", line 1239, in <module>
+    from torch import onnx as onnx
+  File "/home/greenx9/miniconda3/envs/lrp/lib/python3.8/site-packages/torch/onnx/__init__.py", line 12, in <module>
+    from . import (  # usort:skip. Keep the order instead of sorting lexicographically
+  File "/home/greenx9/miniconda3/envs/lrp/lib/python3.8/site-packages/torch/onnx/errors.py", line 9, in <module>
+    from torch.onnx._internal import diagnostics
+  File "/home/greenx9/miniconda3/envs/lrp/lib/python3.8/site-packages/torch/onnx/_internal/diagnostics/__init__.py", line 1, in <module>
+    from ._diagnostic import (
+  File "/home/greenx9/miniconda3/envs/lrp/lib/python3.8/site-packages/torch/onnx/_internal/diagnostics/_diagnostic.py", line 10, in <module>
+    from torch.onnx._internal.diagnostics import infra
+  File "/home/greenx9/miniconda3/envs/lrp/lib/python3.8/site-packages/torch/onnx/_internal/diagnostics/infra/__init__.py", line 1, in <module>
+    from ._infra import (
+  File "/home/greenx9/miniconda3/envs/lrp/lib/python3.8/site-packages/torch/onnx/_internal/diagnostics/infra/_infra.py", line 10, in <module>
+    from torch.onnx._internal.diagnostics.infra import formatter, sarif
+  File "/home/greenx9/miniconda3/envs/lrp/lib/python3.8/site-packages/torch/onnx/_internal/diagnostics/infra/formatter.py", line 7, in <module>
+    from torch.onnx._internal.diagnostics.infra import sarif
+  File "/home/greenx9/miniconda3/envs/lrp/lib/python3.8/site-packages/torch/onnx/_internal/diagnostics/infra/sarif/__init__.py", line 71, in <module>
+    from torch.onnx._internal.diagnostics.infra.sarif._run import Run
+  File "/home/greenx9/miniconda3/envs/lrp/lib/python3.8/site-packages/torch/onnx/_internal/diagnostics/infra/sarif/_run.py", line 9, in <module>
+    from torch.onnx._internal.diagnostics.infra.sarif import (
+  File "<frozen importlib._bootstrap>", line 991, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 975, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 671, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 839, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 943, in get_code
+KeyboardInterrupt

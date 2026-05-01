@@ -1,0 +1,30 @@
+Traceback (most recent call last):
+  File "/data1/greenx9/LRP_algo/00_run_nerf_ranksched_final.py", line 9, in <module>
+    import torch
+  File "/home/greenx9/miniconda3/envs/lrp/lib/python3.8/site-packages/torch/__init__.py", line 1239, in <module>
+    from torch import onnx as onnx
+  File "/home/greenx9/miniconda3/envs/lrp/lib/python3.8/site-packages/torch/onnx/__init__.py", line 12, in <module>
+    from . import (  # usort:skip. Keep the order instead of sorting lexicographically
+  File "/home/greenx9/miniconda3/envs/lrp/lib/python3.8/site-packages/torch/onnx/errors.py", line 9, in <module>
+    from torch.onnx._internal import diagnostics
+  File "/home/greenx9/miniconda3/envs/lrp/lib/python3.8/site-packages/torch/onnx/_internal/diagnostics/__init__.py", line 1, in <module>
+    from ._diagnostic import (
+  File "/home/greenx9/miniconda3/envs/lrp/lib/python3.8/site-packages/torch/onnx/_internal/diagnostics/_diagnostic.py", line 10, in <module>
+    from torch.onnx._internal.diagnostics import infra
+  File "/home/greenx9/miniconda3/envs/lrp/lib/python3.8/site-packages/torch/onnx/_internal/diagnostics/infra/__init__.py", line 1, in <module>
+    from ._infra import (
+  File "/home/greenx9/miniconda3/envs/lrp/lib/python3.8/site-packages/torch/onnx/_internal/diagnostics/infra/_infra.py", line 10, in <module>
+    from torch.onnx._internal.diagnostics.infra import formatter, sarif
+  File "/home/greenx9/miniconda3/envs/lrp/lib/python3.8/site-packages/torch/onnx/_internal/diagnostics/infra/formatter.py", line 7, in <module>
+    from torch.onnx._internal.diagnostics.infra import sarif
+  File "/home/greenx9/miniconda3/envs/lrp/lib/python3.8/site-packages/torch/onnx/_internal/diagnostics/infra/sarif/__init__.py", line 5, in <module>
+    from torch.onnx._internal.diagnostics.infra.sarif._artifact import Artifact
+  File "/home/greenx9/miniconda3/envs/lrp/lib/python3.8/site-packages/torch/onnx/_internal/diagnostics/infra/sarif/_artifact.py", line 18, in <module>
+    class Artifact(object):
+  File "/home/greenx9/miniconda3/envs/lrp/lib/python3.8/dataclasses.py", line 1019, in dataclass
+    return wrap(cls)
+  File "/home/greenx9/miniconda3/envs/lrp/lib/python3.8/dataclasses.py", line 1011, in wrap
+    return _process_class(cls, init, repr, eq, order, unsafe_hash, frozen)
+  File "/home/greenx9/miniconda3/envs/lrp/lib/python3.8/dataclasses.py", line 925, in _process_class
+    _init_fn(flds,
+KeyboardInterrupt
