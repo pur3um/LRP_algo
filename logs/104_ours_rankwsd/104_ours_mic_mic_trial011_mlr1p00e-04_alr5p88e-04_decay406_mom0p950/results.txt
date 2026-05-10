@@ -1,0 +1,39 @@
+====================================================================================================
+run_start_time: 2026-05-04 07:06:33
+script: run_nerf_ranksched.py
+expname: 104_ours_mic_mic_trial011_mlr1p00e-04_alr5p88e-04_decay406_mom0p950
+dataset_type: blender
+datadir: ./data/nerf_synthetic/mic
+resume_start_step: 0
+optimizer_setup:
+  optimizer_main: Muon
+  muon_lr_init: 0.0001
+  muon_weight_decay: 0.0
+  muon_momentum: 0.95
+  optimizer_aux: Adam
+  aux_adam_lr_init: 0.0005880144367424793
+  aux_adam_betas: (0.9, 0.999)
+  lrate_decay_ksteps: 406
+  muon_tensor_count: 48
+  muon_total_params: 1191688
+scheduler_setup:
+  scheduler_name: rank_wsd
+  warmup_steps: 1000
+  min_lr_ratio: 0.1
+  decay_start_step: 80000
+train_psnr_log:
+  lowrank_schedule:
+    rank_start: 150
+    rank_end: 250
+    schedule: cosine_increase_closed_form
+    schedule_steps: 80000
+    oversample: 4
+    subspace_iters: 1
+    ns_steps: 0
+    scale_mode: default
+  lowrank_auto_init_start:
+    enabled: True
+    probe_steps: 8
+    energy_tau: 0.999
+    round_multiple: 8
+iter=5000 global_step=4999 loss=0.0838452131 psnr=12.895122 muon_lr=1.00000000e-04 adam_lr=5.88014437e-04 muon_rank=250 muon_target_rank=250 muon_method=cosine_inc_auto_start

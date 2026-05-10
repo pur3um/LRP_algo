@@ -12,7 +12,7 @@ else
     source "$HOME/.bashrc"
 fi
 
-conda activate nerf
+conda activate lrp39
 
 ROOT=/home/greenx9/data2/LRP_algo
 RUN_FILE=00_run_nerf_ranksched_final.py

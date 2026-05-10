@@ -1,0 +1,46 @@
+Loaded blender (138, 400, 400, 4) torch.Size([40, 4, 4]) [400, 400, 555.5555155968841] ./data/nerf_synthetic/hotdog
+Param split: Muon=20 tensors, Adam=28 tensors
+INFO: Sign Auto Cos increase optimizer configured. Hidden params: 20, Aux params: 28.
+Found ckpts ['/data2/greenx9/LRP_algo/logs/104_ours_rankwsd/104_ours_hotdog_hotdog_trial014_mlr1p75e-03_alr5p39e-04_decay452_mom0p950/100000.tar']
+Reloading from /data2/greenx9/LRP_algo/logs/104_ours_rankwsd/104_ours_hotdog_hotdog_trial014_mlr1p75e-03_alr5p39e-04_decay452_mom0p950/100000.tar
+Loaded optimizer_state_dict from checkpoint.
+Not ndc!
+EVAL TESTSET ONLY
+test poses shape (25, 4, 4)
+test output dir /data2/greenx9/LRP_algo/logs/104_ours_rankwsd/104_ours_hotdog_hotdog_trial014_mlr1p75e-03_alr5p39e-04_decay452_mom0p950/testset_eval
+test metrics json /data2/greenx9/LRP_algo/logs/104_ours_rankwsd/104_ours_hotdog_hotdog_trial014_mlr1p75e-03_alr5p39e-04_decay452_mom0p950/test_metrics_eval.json
+0 0.0020046234130859375
+torch.Size([400, 400, 3]) torch.Size([400, 400])
+1 6.606661319732666
+2 6.341859579086304
+3 6.3683881759643555
+4 6.383537530899048
+5 6.391367435455322
+6 6.398454666137695
+7 6.402910470962524
+8 6.403188467025757
+9 6.4068663120269775
+10 6.404049396514893
+11 6.403082609176636
+12 6.403900861740112
+13 6.4014787673950195
+14 6.423223972320557
+15 6.429952621459961
+16 6.431708574295044
+17 6.434314250946045
+18 6.4414074420928955
+19 6.438657760620117
+20 6.438196182250977
+21 6.444814443588257
+22 6.445383787155151
+23 6.443212509155273
+24 6.447541952133179
+[WARN] LPIPS computation skipped: LPIPS metric requires the `lpips` package. Install it with `pip install lpips`. If torchvision pretrained weights are not cached, the first run may also download the backbone weights.
+============================================================
+Saved test metrics to: /data2/greenx9/LRP_algo/logs/104_ours_rankwsd/104_ours_hotdog_hotdog_trial014_mlr1p75e-03_alr5p39e-04_decay452_mom0p950/test_metrics_eval.json
+Saved rendered test images to: /data2/greenx9/LRP_algo/logs/104_ours_rankwsd/104_ours_hotdog_hotdog_trial014_mlr1p75e-03_alr5p39e-04_decay452_mom0p950/testset_eval
+Saved test README to: /data2/greenx9/LRP_algo/logs/104_ours_rankwsd/104_ours_hotdog_hotdog_trial014_mlr1p75e-03_alr5p39e-04_decay452_mom0p950/README.txt
+mean_psnr : 37.4524417508835
+mean_ssim : 0.9820705008506775
+mean_lpips: None
+[TEST_METRICS] mean_psnr: 37.452442 mean_ssim: 0.982071 mean_lpips: None

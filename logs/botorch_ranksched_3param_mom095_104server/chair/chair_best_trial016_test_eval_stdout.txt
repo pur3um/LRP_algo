@@ -1,0 +1,46 @@
+Loaded blender (138, 400, 400, 4) torch.Size([40, 4, 4]) [400, 400, 555.5555155968841] ./data/nerf_synthetic/chair
+Param split: Muon=20 tensors, Adam=28 tensors
+INFO: Sign Auto Cos increase optimizer configured. Hidden params: 20, Aux params: 28.
+Found ckpts ['/data2/greenx9/LRP_algo/logs/104_ours_rankwsd/104_ours_chair_chair_trial016_mlr9p81e-04_alr6p96e-04_decay273_mom0p950/100000.tar']
+Reloading from /data2/greenx9/LRP_algo/logs/104_ours_rankwsd/104_ours_chair_chair_trial016_mlr9p81e-04_alr6p96e-04_decay273_mom0p950/100000.tar
+Loaded optimizer_state_dict from checkpoint.
+Not ndc!
+EVAL TESTSET ONLY
+test poses shape (25, 4, 4)
+test output dir /data2/greenx9/LRP_algo/logs/104_ours_rankwsd/104_ours_chair_chair_trial016_mlr9p81e-04_alr6p96e-04_decay273_mom0p950/testset_eval
+test metrics json /data2/greenx9/LRP_algo/logs/104_ours_rankwsd/104_ours_chair_chair_trial016_mlr9p81e-04_alr6p96e-04_decay273_mom0p950/test_metrics_eval.json
+0 0.0023140907287597656
+torch.Size([400, 400, 3]) torch.Size([400, 400])
+1 6.580116033554077
+2 6.302733421325684
+3 6.320953369140625
+4 6.337065935134888
+5 6.357865810394287
+6 6.388476133346558
+7 6.412132263183594
+8 6.4697229862213135
+9 6.550808668136597
+10 6.727859973907471
+11 6.750527620315552
+12 6.755831241607666
+13 6.760694742202759
+14 6.757817029953003
+15 6.757190227508545
+16 6.749333381652832
+17 6.764231204986572
+18 6.747844696044922
+19 6.745899438858032
+20 6.745670557022095
+21 6.747046232223511
+22 6.74481463432312
+23 6.744889974594116
+24 6.746335506439209
+[WARN] LPIPS computation skipped: LPIPS metric requires the `lpips` package. Install it with `pip install lpips`. If torchvision pretrained weights are not cached, the first run may also download the backbone weights.
+============================================================
+Saved test metrics to: /data2/greenx9/LRP_algo/logs/104_ours_rankwsd/104_ours_chair_chair_trial016_mlr9p81e-04_alr6p96e-04_decay273_mom0p950/test_metrics_eval.json
+Saved rendered test images to: /data2/greenx9/LRP_algo/logs/104_ours_rankwsd/104_ours_chair_chair_trial016_mlr9p81e-04_alr6p96e-04_decay273_mom0p950/testset_eval
+Saved test README to: /data2/greenx9/LRP_algo/logs/104_ours_rankwsd/104_ours_chair_chair_trial016_mlr9p81e-04_alr6p96e-04_decay273_mom0p950/README.txt
+mean_psnr : 34.11884705148295
+mean_ssim : 0.9761801409721375
+mean_lpips: None
+[TEST_METRICS] mean_psnr: 34.118847 mean_ssim: 0.976180 mean_lpips: None

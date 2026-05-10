@@ -1,0 +1,46 @@
+Loaded blender (138, 400, 400, 4) torch.Size([40, 4, 4]) [400, 400, 555.5555155968841] ./data/nerf_synthetic/lego
+Param split: Muon=20 tensors, Adam=28 tensors
+INFO: Sign Auto Cos increase optimizer configured. Hidden params: 20, Aux params: 28.
+Found ckpts ['/data2/greenx9/LRP_algo/logs/104_ours_rankwsd/104_ours_lego_lego_trial014_mlr1p86e-03_alr6p28e-04_decay126_mom0p950/100000.tar']
+Reloading from /data2/greenx9/LRP_algo/logs/104_ours_rankwsd/104_ours_lego_lego_trial014_mlr1p86e-03_alr6p28e-04_decay126_mom0p950/100000.tar
+Loaded optimizer_state_dict from checkpoint.
+Not ndc!
+EVAL TESTSET ONLY
+test poses shape (25, 4, 4)
+test output dir /data2/greenx9/LRP_algo/logs/104_ours_rankwsd/104_ours_lego_lego_trial014_mlr1p86e-03_alr6p28e-04_decay126_mom0p950/testset_eval
+test metrics json /data2/greenx9/LRP_algo/logs/104_ours_rankwsd/104_ours_lego_lego_trial014_mlr1p86e-03_alr6p28e-04_decay126_mom0p950/test_metrics_eval.json
+0 0.0027768611907958984
+torch.Size([400, 400, 3]) torch.Size([400, 400])
+1 6.5074989795684814
+2 6.384065866470337
+3 6.418417930603027
+4 6.4722607135772705
+5 6.566553354263306
+6 6.743713855743408
+7 6.759052038192749
+8 6.767446279525757
+9 6.7732720375061035
+10 6.774230003356934
+11 6.776631593704224
+12 6.777987718582153
+13 6.770296096801758
+14 6.838439702987671
+15 6.770897150039673
+16 6.770342826843262
+17 6.767964839935303
+18 6.774293899536133
+19 6.768949031829834
+20 6.7674477100372314
+21 6.763758897781372
+22 6.772985458374023
+23 6.782538652420044
+24 6.7663328647613525
+[WARN] LPIPS computation skipped: LPIPS metric requires the `lpips` package. Install it with `pip install lpips`. If torchvision pretrained weights are not cached, the first run may also download the backbone weights.
+============================================================
+Saved test metrics to: /data2/greenx9/LRP_algo/logs/104_ours_rankwsd/104_ours_lego_lego_trial014_mlr1p86e-03_alr6p28e-04_decay126_mom0p950/test_metrics_eval.json
+Saved rendered test images to: /data2/greenx9/LRP_algo/logs/104_ours_rankwsd/104_ours_lego_lego_trial014_mlr1p86e-03_alr6p28e-04_decay126_mom0p950/testset_eval
+Saved test README to: /data2/greenx9/LRP_algo/logs/104_ours_rankwsd/104_ours_lego_lego_trial014_mlr1p86e-03_alr6p28e-04_decay126_mom0p950/README.txt
+mean_psnr : 31.958992210367654
+mean_ssim : 0.9670169878005982
+mean_lpips: None
+[TEST_METRICS] mean_psnr: 31.958992 mean_ssim: 0.967017 mean_lpips: None

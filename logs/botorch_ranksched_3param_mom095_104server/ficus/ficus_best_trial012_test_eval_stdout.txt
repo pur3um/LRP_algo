@@ -1,0 +1,46 @@
+Loaded blender (138, 400, 400, 4) torch.Size([40, 4, 4]) [400, 400, 555.5555155968841] ./data/nerf_synthetic/ficus
+Param split: Muon=20 tensors, Adam=28 tensors
+INFO: Sign Auto Cos increase optimizer configured. Hidden params: 20, Aux params: 28.
+Found ckpts ['/data2/greenx9/LRP_algo/logs/104_ours_rankwsd/104_ours_ficus_ficus_trial012_mlr1p29e-03_alr8p15e-04_decay176_mom0p950/100000.tar']
+Reloading from /data2/greenx9/LRP_algo/logs/104_ours_rankwsd/104_ours_ficus_ficus_trial012_mlr1p29e-03_alr8p15e-04_decay176_mom0p950/100000.tar
+Loaded optimizer_state_dict from checkpoint.
+Not ndc!
+EVAL TESTSET ONLY
+test poses shape (25, 4, 4)
+test output dir /data2/greenx9/LRP_algo/logs/104_ours_rankwsd/104_ours_ficus_ficus_trial012_mlr1p29e-03_alr8p15e-04_decay176_mom0p950/testset_eval
+test metrics json /data2/greenx9/LRP_algo/logs/104_ours_rankwsd/104_ours_ficus_ficus_trial012_mlr1p29e-03_alr8p15e-04_decay176_mom0p950/test_metrics_eval.json
+0 0.0031366348266601562
+torch.Size([400, 400, 3]) torch.Size([400, 400])
+1 6.528523206710815
+2 6.325003147125244
+3 6.342860221862793
+4 6.361316204071045
+5 6.379947185516357
+6 6.404939413070679
+7 6.4337263107299805
+8 6.482202529907227
+9 6.584210157394409
+10 6.746238946914673
+11 6.754213094711304
+12 6.754162073135376
+13 6.751466274261475
+14 6.754191637039185
+15 6.7540552616119385
+16 6.747947692871094
+17 6.7481529712677
+18 6.750154972076416
+19 6.754307508468628
+20 6.7466371059417725
+21 6.746333122253418
+22 6.749927520751953
+23 6.7449164390563965
+24 6.744173049926758
+[WARN] LPIPS computation skipped: LPIPS metric requires the `lpips` package. Install it with `pip install lpips`. If torchvision pretrained weights are not cached, the first run may also download the backbone weights.
+============================================================
+Saved test metrics to: /data2/greenx9/LRP_algo/logs/104_ours_rankwsd/104_ours_ficus_ficus_trial012_mlr1p29e-03_alr8p15e-04_decay176_mom0p950/test_metrics_eval.json
+Saved rendered test images to: /data2/greenx9/LRP_algo/logs/104_ours_rankwsd/104_ours_ficus_ficus_trial012_mlr1p29e-03_alr8p15e-04_decay176_mom0p950/testset_eval
+Saved test README to: /data2/greenx9/LRP_algo/logs/104_ours_rankwsd/104_ours_ficus_ficus_trial012_mlr1p29e-03_alr8p15e-04_decay176_mom0p950/README.txt
+mean_psnr : 29.35582687568527
+mean_ssim : 0.9656419324874878
+mean_lpips: None
+[TEST_METRICS] mean_psnr: 29.355827 mean_ssim: 0.965642 mean_lpips: None

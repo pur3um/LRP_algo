@@ -1,0 +1,46 @@
+Loaded blender (138, 400, 400, 4) torch.Size([40, 4, 4]) [400, 400, 625.0000252084244] ./data/nerf_synthetic/drums
+Param split: Muon=20 tensors, Adam=28 tensors
+INFO: Sign Auto Cos increase optimizer configured. Hidden params: 20, Aux params: 28.
+Found ckpts ['/data2/greenx9/LRP_algo/logs/104_ours_rankwsd/104_ours_drums_drums_trial019_mlr1p31e-03_alr4p42e-04_decay398_mom0p950/100000.tar']
+Reloading from /data2/greenx9/LRP_algo/logs/104_ours_rankwsd/104_ours_drums_drums_trial019_mlr1p31e-03_alr4p42e-04_decay398_mom0p950/100000.tar
+Loaded optimizer_state_dict from checkpoint.
+Not ndc!
+EVAL TESTSET ONLY
+test poses shape (25, 4, 4)
+test output dir /data2/greenx9/LRP_algo/logs/104_ours_rankwsd/104_ours_drums_drums_trial019_mlr1p31e-03_alr4p42e-04_decay398_mom0p950/testset_eval
+test metrics json /data2/greenx9/LRP_algo/logs/104_ours_rankwsd/104_ours_drums_drums_trial019_mlr1p31e-03_alr4p42e-04_decay398_mom0p950/test_metrics_eval.json
+0 0.002020120620727539
+torch.Size([400, 400, 3]) torch.Size([400, 400])
+1 6.4997100830078125
+2 6.283515691757202
+3 6.303470611572266
+4 6.317063808441162
+5 6.334285259246826
+6 6.352706432342529
+7 6.366875410079956
+8 6.373986721038818
+9 6.382383108139038
+10 6.381628513336182
+11 6.388477802276611
+12 6.391484498977661
+13 6.392901659011841
+14 6.397710800170898
+15 6.414037466049194
+16 6.410983562469482
+17 6.414268970489502
+18 6.418354511260986
+19 6.418538570404053
+20 6.420216083526611
+21 6.422465562820435
+22 6.419865846633911
+23 6.421299457550049
+24 6.423187494277954
+[WARN] LPIPS computation skipped: LPIPS metric requires the `lpips` package. Install it with `pip install lpips`. If torchvision pretrained weights are not cached, the first run may also download the backbone weights.
+============================================================
+Saved test metrics to: /data2/greenx9/LRP_algo/logs/104_ours_rankwsd/104_ours_drums_drums_trial019_mlr1p31e-03_alr4p42e-04_decay398_mom0p950/test_metrics_eval.json
+Saved rendered test images to: /data2/greenx9/LRP_algo/logs/104_ours_rankwsd/104_ours_drums_drums_trial019_mlr1p31e-03_alr4p42e-04_decay398_mom0p950/testset_eval
+Saved test README to: /data2/greenx9/LRP_algo/logs/104_ours_rankwsd/104_ours_drums_drums_trial019_mlr1p31e-03_alr4p42e-04_decay398_mom0p950/README.txt
+mean_psnr : 25.71530329455993
+mean_ssim : 0.9316851234436035
+mean_lpips: None
+[TEST_METRICS] mean_psnr: 25.715303 mean_ssim: 0.931685 mean_lpips: None

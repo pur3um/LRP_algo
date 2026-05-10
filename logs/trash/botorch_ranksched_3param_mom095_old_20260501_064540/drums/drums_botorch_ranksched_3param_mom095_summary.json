@@ -1,0 +1,123 @@
+{
+  "scene": "drums",
+  "method": "BoTorch batch BO, 3 searched params with fixed muon_momentum=0.95",
+  "train_scheduler": "rank_wsd",
+  "selection_metric": "final_validation_set_mean_psnr",
+  "objective": "final_validation_set_mean_psnr",
+  "final_test_policy": "evaluate_best_validation_trial_once_after_hpo",
+  "acquisition": "qLogExpectedImprovement",
+  "gp_model": "SingleTaskGP(input_transform=Normalize(d=3), outcome_transform=Standardize(m=1))",
+  "n_complete_trials": 4,
+  "best_value": 26.361757,
+  "best_val_mean_psnr": 26.361757,
+  "best_test_mean_psnr": null,
+  "best_test_mean_ssim": null,
+  "best_test_mean_lpips": null,
+  "best_params": {
+    "muon_lrate": 0.003704381968500205,
+    "lrate": 0.0005697747652055574,
+    "lrate_decay": 146,
+    "muon_momentum": 0.95
+  },
+  "best_unit_x": [
+    0.9233334064483643,
+    0.7557032108306885,
+    0.11520141363143921
+  ],
+  "best_trial_number": 2,
+  "final_test_evaluation": null,
+  "top_trials": [
+    {
+      "trial_number": 2,
+      "value": 26.361757,
+      "val_mean_psnr": 26.361757,
+      "train_scheduler": "rank_wsd",
+      "seed": 2,
+      "muon_lrate": 0.003704381968500205,
+      "lrate": 0.0005697747652055574,
+      "lrate_decay": 146,
+      "muon_momentum": 0.95,
+      "unit_x": [
+        0.9233334064483643,
+        0.7557032108306885,
+        0.11520141363143921
+      ],
+      "expname": "104_ours_drums_drums_trial002_mlr3p70e-03_alr5p70e-04_decay146_mom0p950",
+      "gpu": "6",
+      "hpo_trial_dir": "/data2/greenx9/LRP_algo/logs/botorch_ranksched_3param_mom095/drums/104_ours_drums_drums_trial002_mlr3p70e-03_alr5p70e-04_decay146_mom0p950",
+      "train_basedir": "/data2/greenx9/LRP_algo/logs/104_ours_rankwsd",
+      "train_run_dir": "/data2/greenx9/LRP_algo/logs/104_ours_rankwsd/104_ours_drums_drums_trial002_mlr3p70e-03_alr5p70e-04_decay146_mom0p950",
+      "stdout_log": "/data2/greenx9/LRP_algo/logs/botorch_ranksched_3param_mom095/drums/104_ours_drums_drums_trial002_mlr3p70e-03_alr5p70e-04_decay146_mom0p950/stdout.txt",
+      "stderr_log": "/data2/greenx9/LRP_algo/logs/botorch_ranksched_3param_mom095/drums/104_ours_drums_drums_trial002_mlr3p70e-03_alr5p70e-04_decay146_mom0p950/stderr.txt"
+    },
+    {
+      "trial_number": 0,
+      "value": 26.285364,
+      "val_mean_psnr": 26.285364,
+      "train_scheduler": "rank_wsd",
+      "seed": 0,
+      "muon_lrate": 0.0006414944003491598,
+      "lrate": 0.0003913127441184067,
+      "lrate_decay": 298,
+      "muon_momentum": 0.95,
+      "unit_x": [
+        0.47510719299316406,
+        0.592523992061615,
+        0.4944792091846466
+      ],
+      "expname": "104_ours_drums_drums_trial000_mlr6p41e-04_alr3p91e-04_decay298_mom0p950",
+      "gpu": "4",
+      "hpo_trial_dir": "/data2/greenx9/LRP_algo/logs/botorch_ranksched_3param_mom095/drums/104_ours_drums_drums_trial000_mlr6p41e-04_alr3p91e-04_decay298_mom0p950",
+      "train_basedir": "/data2/greenx9/LRP_algo/logs/104_ours_rankwsd",
+      "train_run_dir": "/data2/greenx9/LRP_algo/logs/104_ours_rankwsd/104_ours_drums_drums_trial000_mlr6p41e-04_alr3p91e-04_decay298_mom0p950",
+      "stdout_log": "/data2/greenx9/LRP_algo/logs/botorch_ranksched_3param_mom095/drums/104_ours_drums_drums_trial000_mlr6p41e-04_alr3p91e-04_decay298_mom0p950/stdout.txt",
+      "stderr_log": "/data2/greenx9/LRP_algo/logs/botorch_ranksched_3param_mom095/drums/104_ours_drums_drums_trial000_mlr6p41e-04_alr3p91e-04_decay298_mom0p950/stderr.txt"
+    },
+    {
+      "trial_number": 3,
+      "value": 24.368835,
+      "val_mean_psnr": 24.368835,
+      "train_scheduler": "rank_wsd",
+      "seed": 3,
+      "muon_lrate": 0.00023281446557814244,
+      "lrate": 0.00030827620253062705,
+      "lrate_decay": 389,
+      "muon_momentum": 0.95,
+      "unit_x": [
+        0.21601909399032593,
+        0.4889400005340576,
+        0.7226877212524414
+      ],
+      "expname": "104_ours_drums_drums_trial003_mlr2p33e-04_alr3p08e-04_decay389_mom0p950",
+      "gpu": "7",
+      "hpo_trial_dir": "/data2/greenx9/LRP_algo/logs/botorch_ranksched_3param_mom095/drums/104_ours_drums_drums_trial003_mlr2p33e-04_alr3p08e-04_decay389_mom0p950",
+      "train_basedir": "/data2/greenx9/LRP_algo/logs/104_ours_rankwsd",
+      "train_run_dir": "/data2/greenx9/LRP_algo/logs/104_ours_rankwsd/104_ours_drums_drums_trial003_mlr2p33e-04_alr3p08e-04_decay389_mom0p950",
+      "stdout_log": "/data2/greenx9/LRP_algo/logs/botorch_ranksched_3param_mom095/drums/104_ours_drums_drums_trial003_mlr2p33e-04_alr3p08e-04_decay389_mom0p950/stdout.txt",
+      "stderr_log": "/data2/greenx9/LRP_algo/logs/botorch_ranksched_3param_mom095/drums/104_ours_drums_drums_trial003_mlr2p33e-04_alr3p08e-04_decay389_mom0p950/stderr.txt"
+    },
+    {
+      "trial_number": 1,
+      "value": 11.115446,
+      "val_mean_psnr": 11.115446,
+      "train_scheduler": "rank_wsd",
+      "seed": 1,
+      "muon_lrate": 0.001201558947613998,
+      "lrate": 0.00014847413781803658,
+      "lrate_decay": 442,
+      "muon_momentum": 0.95,
+      "unit_x": [
+        0.6355292201042175,
+        0.17165081202983856,
+        0.8551316857337952
+      ],
+      "expname": "104_ours_drums_drums_trial001_mlr1p20e-03_alr1p48e-04_decay442_mom0p950",
+      "gpu": "5",
+      "hpo_trial_dir": "/data2/greenx9/LRP_algo/logs/botorch_ranksched_3param_mom095/drums/104_ours_drums_drums_trial001_mlr1p20e-03_alr1p48e-04_decay442_mom0p950",
+      "train_basedir": "/data2/greenx9/LRP_algo/logs/104_ours_rankwsd",
+      "train_run_dir": "/data2/greenx9/LRP_algo/logs/104_ours_rankwsd/104_ours_drums_drums_trial001_mlr1p20e-03_alr1p48e-04_decay442_mom0p950",
+      "stdout_log": "/data2/greenx9/LRP_algo/logs/botorch_ranksched_3param_mom095/drums/104_ours_drums_drums_trial001_mlr1p20e-03_alr1p48e-04_decay442_mom0p950/stdout.txt",
+      "stderr_log": "/data2/greenx9/LRP_algo/logs/botorch_ranksched_3param_mom095/drums/104_ours_drums_drums_trial001_mlr1p20e-03_alr1p48e-04_decay442_mom0p950/stderr.txt"
+    }
+  ]
+}
