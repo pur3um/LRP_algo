@@ -1,0 +1,25 @@
+====================================================================================================
+run_start_time: 2026-05-01 16:15:56
+script: run_nerf_ranksched.py
+expname: smoke_100_muon_chair_gpu23_chair_trial001_mlr1p20e-03_alr1p48e-04_decay442_mom0p950
+dataset_type: blender
+datadir: ./data/nerf_synthetic/chair
+resume_start_step: 0
+optimizer_setup:
+  optimizer_main: Muon
+  muon_lr_init: 0.001201558947613998
+  muon_weight_decay: 0.0
+  muon_momentum: 0.95
+  optimizer_aux: Adam
+  aux_adam_lr_init: 0.00014847413781803658
+  aux_adam_betas: (0.9, 0.999)
+  lrate_decay_ksteps: 442
+  muon_tensor_count: 48
+  muon_total_params: 1191688
+scheduler_setup:
+  scheduler_name: exp_decay
+  lrate_decay_ksteps: 442
+  decay_rate: 0.1
+  decay_steps: 442000.0
+train_psnr_log:
+iter=20 global_step=20 loss=0.2570168376 psnr=8.896461 muon_lr=1.20144628e-03 adam_lr=1.48460216e-04

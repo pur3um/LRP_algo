@@ -1,0 +1,22 @@
+  0%|          | 0/20 [00:00<?, ?it/s]/home/greenx9/miniconda3/envs/lrp39/lib/python3.9/site-packages/torch/functional.py:504: UserWarning: torch.meshgrid: in an upcoming release, it will be required to pass the indexing argument. (Triggered internally at ../aten/src/ATen/native/TensorShape.cpp:3483.)
+  return _VF.meshgrid(tensors, **kwargs)  # type: ignore[attr-defined]
+/data1/greenx9/LRP_algo/run_nerf_helpers.py:201: UserWarning: cumsum_cuda_kernel does not have a deterministic implementation, but you set 'torch.use_deterministic_algorithms(True, warn_only=True)'. You can file an issue at https://github.com/pytorch/pytorch/issues to help us prioritize adding deterministic support for this operation. (Triggered internally at ../aten/src/ATen/Context.cpp:71.)
+  cdf = torch.cumsum(pdf, -1)
+/home/greenx9/miniconda3/envs/lrp39/lib/python3.9/site-packages/torch/autograd/__init__.py:200: UserWarning: cumsum_cuda_kernel does not have a deterministic implementation, but you set 'torch.use_deterministic_algorithms(True, warn_only=True)'. You can file an issue at https://github.com/pytorch/pytorch/issues to help us prioritize adding deterministic support for this operation. (Triggered internally at ../aten/src/ATen/Context.cpp:71.)
+  Variable._execution_engine.run_backward(  # Calls into the C++ engine to run the backward pass
+  5%|▌         | 1/20 [00:00<00:12,  1.54it/s] 10%|█         | 2/20 [00:00<00:06,  2.77it/s] 15%|█▌        | 3/20 [00:00<00:04,  3.72it/s] 20%|██        | 4/20 [00:01<00:03,  4.39it/s] 25%|██▌       | 5/20 [00:01<00:03,  4.89it/s] 30%|███       | 6/20 [00:01<00:02,  5.54it/s] 35%|███▌      | 7/20 [00:01<00:02,  6.06it/s] 40%|████      | 8/20 [00:01<00:01,  6.47it/s] 45%|████▌     | 9/20 [00:01<00:01,  6.61it/s] 50%|█████     | 10/20 [00:01<00:01,  6.78it/s] 55%|█████▌    | 11/20 [00:02<00:01,  6.94it/s] 60%|██████    | 12/20 [00:02<00:01,  7.10it/s] 65%|██████▌   | 13/20 [00:02<00:01,  6.99it/s] 70%|███████   | 14/20 [00:02<00:00,  6.84it/s] 75%|███████▌  | 15/20 [00:02<00:00,  6.87it/s] 80%|████████  | 16/20 [00:02<00:00,  6.39it/s] 85%|████████▌ | 17/20 [00:03<00:00,  5.56it/s] 90%|█████████ | 18/20 [00:03<00:00,  5.20it/s] 95%|█████████▌| 19/20 [00:03<00:00,  4.98it/s]
+  0%|          | 0/13 [00:00<?, ?it/s][A
+  8%|▊         | 1/13 [00:13<02:39, 13.29s/it][A
+ 15%|█▌        | 2/13 [00:27<02:32, 13.87s/it][A
+ 23%|██▎       | 3/13 [00:41<02:20, 14.10s/it][A
+ 31%|███       | 4/13 [00:56<02:07, 14.22s/it][A
+ 38%|███▊      | 5/13 [01:10<01:54, 14.29s/it][A
+ 46%|████▌     | 6/13 [01:25<01:40, 14.36s/it][A
+ 54%|█████▍    | 7/13 [01:39<01:26, 14.41s/it][A
+ 62%|██████▏   | 8/13 [01:54<01:12, 14.44s/it][A
+ 69%|██████▉   | 9/13 [02:08<00:57, 14.47s/it][A
+ 77%|███████▋  | 10/13 [02:23<00:43, 14.49s/it][A
+ 85%|████████▍ | 11/13 [02:37<00:29, 14.51s/it][A
+ 92%|█████████▏| 12/13 [02:52<00:14, 14.53s/it][A
+100%|██████████| 13/13 [03:07<00:00, 14.54s/it][A100%|██████████| 13/13 [03:07<00:00, 14.39s/it]
+                                                95%|█████████▌| 19/20 [03:10<00:00,  4.98it/s]100%|██████████| 20/20 [03:10<00:00, 56.40s/it]100%|██████████| 20/20 [03:10<00:00,  9.55s/it]

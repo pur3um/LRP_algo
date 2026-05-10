@@ -1,0 +1,46 @@
+Loaded blender (138, 400, 400, 4) torch.Size([40, 4, 4]) [400, 400, 555.5555155968841] ./data/nerf_synthetic/chair
+Param split: Muon=20 tensors, Adam=28 tensors
+INFO: Aux sign optimizer configured. Hidden params: 20, Aux params: 28.
+Found ckpts ['/data1/greenx9/LRP_algo/logs/smoke_100_muon_hpo_gpu23/smoke_100_muon_chair_gpu23_chair_trial001_mlr1p20e-03_alr1p48e-04_decay442_mom0p950/000020.tar']
+Reloading from /data1/greenx9/LRP_algo/logs/smoke_100_muon_hpo_gpu23/smoke_100_muon_chair_gpu23_chair_trial001_mlr1p20e-03_alr1p48e-04_decay442_mom0p950/000020.tar
+Loaded optimizer_state_dict from checkpoint.
+Not ndc!
+EVAL TESTSET ONLY
+test poses shape (25, 4, 4)
+test output dir /data1/greenx9/LRP_algo/logs/smoke_100_muon_hpo_gpu23/smoke_100_muon_chair_gpu23_chair_trial001_mlr1p20e-03_alr1p48e-04_decay442_mom0p950/testset_eval
+test metrics json /data1/greenx9/LRP_algo/logs/smoke_100_muon_hpo_gpu23/smoke_100_muon_chair_gpu23_chair_trial001_mlr1p20e-03_alr1p48e-04_decay442_mom0p950/test_metrics_eval.json
+0 0.0053043365478515625
+torch.Size([400, 400, 3]) torch.Size([400, 400])
+1 6.632043838500977
+2 6.448456048965454
+3 6.478082180023193
+4 6.498023509979248
+5 6.522258758544922
+6 6.54895806312561
+7 6.562817573547363
+8 6.5706164836883545
+9 6.57921838760376
+10 6.590980052947998
+11 6.593936204910278
+12 6.597607851028442
+13 6.605023145675659
+14 6.606273651123047
+15 6.6161839962005615
+16 6.624694347381592
+17 6.6186017990112305
+18 6.619929313659668
+19 6.624666690826416
+20 6.61946964263916
+21 6.6285388469696045
+22 6.632107257843018
+23 6.632994651794434
+24 6.629886627197266
+[WARN] LPIPS computation skipped: LPIPS metric requires the `lpips` package. Install it with `pip install lpips`. If torchvision pretrained weights are not cached, the first run may also download the backbone weights.
+============================================================
+Saved test metrics to: /data1/greenx9/LRP_algo/logs/smoke_100_muon_hpo_gpu23/smoke_100_muon_chair_gpu23_chair_trial001_mlr1p20e-03_alr1p48e-04_decay442_mom0p950/test_metrics_eval.json
+Saved rendered test images to: /data1/greenx9/LRP_algo/logs/smoke_100_muon_hpo_gpu23/smoke_100_muon_chair_gpu23_chair_trial001_mlr1p20e-03_alr1p48e-04_decay442_mom0p950/testset_eval
+Saved test README to: /data1/greenx9/LRP_algo/logs/smoke_100_muon_hpo_gpu23/smoke_100_muon_chair_gpu23_chair_trial001_mlr1p20e-03_alr1p48e-04_decay442_mom0p950/README.txt
+mean_psnr : 14.10406196369443
+mean_ssim : 0.823627097606659
+mean_lpips: None
+[TEST_METRICS] mean_psnr: 14.104062 mean_ssim: 0.823627 mean_lpips: None

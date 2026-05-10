@@ -2007,5 +2007,5 @@ CUDA_VISIBLE_DEVICES=2 python run_nerf_ranksched.py --basedir logs/sched/cosine 
 CUDA_VISIBLE_DEVICES=3 python run_nerf_ranksched.py --basedir logs/sched/cosine --config configs/drums.txt --expname drums_auto_200k --optimizer aux-sign-auto-cos-inc --train-scheduler rank_wsd --muon_lrate 3e-3 --lowrank_rank_start 150 --lowrank_rank_end 250 --lowrank_auto_init_rank_start --N_iters 200000
 
 
-CUDA_VISIBLE_DEVICES=0 python run_nerf_ranksched.py --basedir logs/sched/rankwsd --config configs/room.txt --expname room_auto --optimizer aux-sign-auto-cos-inc --train-scheduler rank_wsd --muon_lrate 3e-3 --lowrank_rank_start 150 --lowrank_rank_end 250 --lowrank_auto_init_rank_start --N_iters 100000
+CUDA_VISIBLE_DEVICES=1 python 00_run_nerf_ranksched_final.py --basedir __logs/ --config configs/chair.txt --expname chair --optimizer aux-sign-auto-cos-inc --train-scheduler rank_wsd --muon_lrate 3e-3 --lowrank_rank_start 150 --lowrank_rank_end 250 --lowrank_auto_init_rank_start --N_iters 100000
 """

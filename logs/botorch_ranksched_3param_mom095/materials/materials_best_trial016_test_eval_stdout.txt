@@ -1,0 +1,46 @@
+Loaded blender (138, 400, 400, 4) torch.Size([40, 4, 4]) [400, 400, 625.0000252084244] ./data/nerf_synthetic/materials
+Param split: Muon=20 tensors, Adam=28 tensors
+INFO: Aux sign optimizer configured. Hidden params: 20, Aux params: 28.
+Found ckpts ['/data1/greenx9/LRP_algo/logs/100_muon_exp_decay_lrp39/100_muon_materials_materials_trial016_mlr5p00e-03_alr4p82e-04_decay100_mom0p950/100000.tar']
+Reloading from /data1/greenx9/LRP_algo/logs/100_muon_exp_decay_lrp39/100_muon_materials_materials_trial016_mlr5p00e-03_alr4p82e-04_decay100_mom0p950/100000.tar
+Loaded optimizer_state_dict from checkpoint.
+Not ndc!
+EVAL TESTSET ONLY
+test poses shape (25, 4, 4)
+test output dir /data1/greenx9/LRP_algo/logs/100_muon_exp_decay_lrp39/100_muon_materials_materials_trial016_mlr5p00e-03_alr4p82e-04_decay100_mom0p950/testset_eval
+test metrics json /data1/greenx9/LRP_algo/logs/100_muon_exp_decay_lrp39/100_muon_materials_materials_trial016_mlr5p00e-03_alr4p82e-04_decay100_mom0p950/test_metrics_eval.json
+0 0.004713535308837891
+torch.Size([400, 400, 3]) torch.Size([400, 400])
+1 6.512274265289307
+2 6.312498569488525
+3 6.330920934677124
+4 6.353206157684326
+5 6.3601415157318115
+6 6.369881629943848
+7 6.378575325012207
+8 6.392228603363037
+9 6.399323463439941
+10 6.4011335372924805
+11 6.40692400932312
+12 6.410802602767944
+13 6.420514345169067
+14 6.432332277297974
+15 6.439449310302734
+16 6.438265800476074
+17 6.436537504196167
+18 6.4489054679870605
+19 6.445347785949707
+20 6.447114944458008
+21 6.449575185775757
+22 6.461287498474121
+23 6.463935852050781
+24 6.466833591461182
+[WARN] LPIPS computation skipped: LPIPS metric requires the `lpips` package. Install it with `pip install lpips`. If torchvision pretrained weights are not cached, the first run may also download the backbone weights.
+============================================================
+Saved test metrics to: /data1/greenx9/LRP_algo/logs/100_muon_exp_decay_lrp39/100_muon_materials_materials_trial016_mlr5p00e-03_alr4p82e-04_decay100_mom0p950/test_metrics_eval.json
+Saved rendered test images to: /data1/greenx9/LRP_algo/logs/100_muon_exp_decay_lrp39/100_muon_materials_materials_trial016_mlr5p00e-03_alr4p82e-04_decay100_mom0p950/testset_eval
+Saved test README to: /data1/greenx9/LRP_algo/logs/100_muon_exp_decay_lrp39/100_muon_materials_materials_trial016_mlr5p00e-03_alr4p82e-04_decay100_mom0p950/README.txt
+mean_psnr : 29.953123740523473
+mean_ssim : 0.9621162867546081
+mean_lpips: None
+[TEST_METRICS] mean_psnr: 29.953124 mean_ssim: 0.962116 mean_lpips: None

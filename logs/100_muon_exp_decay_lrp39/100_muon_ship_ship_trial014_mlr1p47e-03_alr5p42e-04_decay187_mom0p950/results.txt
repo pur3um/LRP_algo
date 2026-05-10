@@ -1,0 +1,41 @@
+====================================================================================================
+run_start_time: 2026-05-05 07:20:55
+script: run_nerf_ranksched.py
+expname: 100_muon_ship_ship_trial014_mlr1p47e-03_alr5p42e-04_decay187_mom0p950
+dataset_type: blender
+datadir: ./data/nerf_synthetic/ship
+resume_start_step: 0
+optimizer_setup:
+  optimizer_main: Muon
+  muon_lr_init: 0.0014702617191784696
+  muon_weight_decay: 0.0
+  muon_momentum: 0.95
+  optimizer_aux: Adam
+  aux_adam_lr_init: 0.0005415216489192797
+  aux_adam_betas: (0.9, 0.999)
+  lrate_decay_ksteps: 187
+  muon_tensor_count: 48
+  muon_total_params: 1191688
+scheduler_setup:
+  scheduler_name: exp_decay
+  lrate_decay_ksteps: 187
+  decay_rate: 0.1
+  decay_steps: 187000.0
+train_psnr_log:
+iter=5000 global_step=4999 loss=0.0070321877 psnr=25.581383 muon_lr=1.38250712e-03 adam_lr=5.09200183e-04
+iter=10000 global_step=9999 loss=0.0083879335 psnr=24.409422 muon_lr=1.29995826e-03 adam_lr=4.78796076e-04
+iter=15000 global_step=14999 loss=0.0060535083 psnr=25.898832 muon_lr=1.22233836e-03 adam_lr=4.50207385e-04
+iter=20000 global_step=19999 loss=0.0059123924 psnr=27.782753 muon_lr=1.14935310e-03 adam_lr=4.23325712e-04
+iter=25000 global_step=24999 loss=0.0047450848 psnr=27.031469 muon_lr=1.08072577e-03 adam_lr=3.98049130e-04
+iter=30000 global_step=29999 loss=0.0038001721 psnr=28.700699 muon_lr=1.01619613e-03 adam_lr=3.74281802e-04
+iter=35000 global_step=34999 loss=0.0036746860 psnr=28.458807 muon_lr=9.55519533e-04 adam_lr=3.51933609e-04
+iter=40000 global_step=39999 loss=0.0049632248 psnr=27.567341 muon_lr=8.98465906e-04 adam_lr=3.30919817e-04
+iter=45000 global_step=44999 loss=0.0044740112 psnr=28.230864 muon_lr=8.44818924e-04 adam_lr=3.11160748e-04
+iter=50000 global_step=49999 loss=0.0032302148 psnr=29.265129 muon_lr=7.94375179e-04 adam_lr=2.92581485e-04
+iter=55000 global_step=54999 loss=0.0028668114 psnr=31.104029 muon_lr=7.46943406e-04 adam_lr=2.75111580e-04
+iter=60000 global_step=59999 loss=0.0043593175 psnr=28.532129 muon_lr=7.02343763e-04 adam_lr=2.58684796e-04
+iter=65000 global_step=64999 loss=0.0051903958 psnr=28.344866 muon_lr=6.60407143e-04 adam_lr=2.43238847e-04
+iter=70000 global_step=69999 loss=0.0034573982 psnr=30.047663 muon_lr=6.20974540e-04 adam_lr=2.28715168e-04
+iter=75000 global_step=74999 loss=0.0031008751 psnr=30.389593 muon_lr=5.83896438e-04 adam_lr=2.15058692e-04
+iter=80000 global_step=79999 loss=0.0033952985 psnr=29.192322 muon_lr=5.49032254e-04 adam_lr=2.02217637e-04
+iter=85000 global_step=84999 loss=0.0022591101 psnr=31.627066 muon_lr=5.16249793e-04 adam_lr=1.90143316e-04

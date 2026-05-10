@@ -1,0 +1,73 @@
+Loaded blender (138, 400, 400, 4) torch.Size([40, 4, 4]) [400, 400, 625.0000252084244] ./data/nerf_synthetic/materials
+Param split: Muon=20 tensors, Adam=28 tensors
+INFO: Aux sign optimizer configured. Hidden params: 20, Aux params: 28.
+Found ckpts []
+Not ndc!
+OriginalExpDecayScheduler(base_lr_adam=0.000533776, base_lr_muon=0.000107969, decay_rate=0.1, lrate_decay=360, decay_steps=360000.0, base_N_rand=1024)
+Begin
+TRAIN views are [ 0  1  2  3  4  5  6  7  8  9 10 11 12 13 14 15 16 17 18 19 20 21 22 23
+ 24 25 26 27 28 29 30 31 32 33 34 35 36 37 38 39 40 41 42 43 44 45 46 47
+ 48 49 50 51 52 53 54 55 56 57 58 59 60 61 62 63 64 65 66 67 68 69 70 71
+ 72 73 74 75 76 77 78 79 80 81 82 83 84 85 86 87 88 89 90 91 92 93 94 95
+ 96 97 98 99]
+TEST views are [113 114 115 116 117 118 119 120 121 122 123 124 125 126 127 128 129 130
+ 131 132 133 134 135 136 137]
+VAL views are [100 101 102 103 104 105 106 107 108 109 110 111 112]
+[Config] Center cropping of size 200 x 200 is enabled until iter 500
+[TRAIN] Iter: 5000 Loss: 0.06094920635223389  PSNR: 14.792512893676758  scheduler=exp_decay phase=exp_decay N_rand=1024 lr_ratio=0.9685 lr_muon=1.046e-04 lr_adam=5.170e-04
+[VAL]   Iter: 5000 PSNR: 13.958346366882324
+[TRAIN] Iter: 10000 Loss: 0.01583116501569748  PSNR: 21.059520721435547  scheduler=exp_decay phase=exp_decay N_rand=1024 lr_ratio=0.9381 lr_muon=1.013e-04 lr_adam=5.007e-04
+[VAL]   Iter: 10000 PSNR: 16.56915283203125
+[TRAIN] Iter: 15000 Loss: 0.012364920228719711  PSNR: 22.300724029541016  scheduler=exp_decay phase=exp_decay N_rand=1024 lr_ratio=0.9085 lr_muon=9.809e-05 lr_adam=4.850e-04
+[VAL]   Iter: 15000 PSNR: 20.447669982910156
+[TRAIN] Iter: 20000 Loss: 0.013203708454966545  PSNR: 22.13096046447754  scheduler=exp_decay phase=exp_decay N_rand=1024 lr_ratio=0.8799 lr_muon=9.501e-05 lr_adam=4.697e-04
+[VAL]   Iter: 20000 PSNR: 21.72764778137207
+[TRAIN] Iter: 25000 Loss: 0.00858062319457531  PSNR: 24.2082462310791  scheduler=exp_decay phase=exp_decay N_rand=1024 lr_ratio=0.8522 lr_muon=9.202e-05 lr_adam=4.549e-04
+[VAL]   Iter: 25000 PSNR: 23.177715301513672
+[TRAIN] Iter: 30000 Loss: 0.015554447658360004  PSNR: 21.7779598236084  scheduler=exp_decay phase=exp_decay N_rand=1024 lr_ratio=0.8254 lr_muon=8.912e-05 lr_adam=4.406e-04
+[VAL]   Iter: 30000 PSNR: 24.42347526550293
+[TRAIN] Iter: 35000 Loss: 0.005607786122709513  PSNR: 25.8087100982666  scheduler=exp_decay phase=exp_decay N_rand=1024 lr_ratio=0.7994 lr_muon=8.631e-05 lr_adam=4.267e-04
+[VAL]   Iter: 35000 PSNR: 24.136404037475586
+[TRAIN] Iter: 40000 Loss: 0.006846356205642223  PSNR: 25.247533798217773  scheduler=exp_decay phase=exp_decay N_rand=1024 lr_ratio=0.7743 lr_muon=8.360e-05 lr_adam=4.133e-04
+[VAL]   Iter: 40000 PSNR: 23.190338134765625
+[TRAIN] Iter: 45000 Loss: 0.010470455512404442  PSNR: 23.99960708618164  scheduler=exp_decay phase=exp_decay N_rand=1024 lr_ratio=0.7499 lr_muon=8.097e-05 lr_adam=4.003e-04
+[VAL]   Iter: 45000 PSNR: 27.310855865478516
+[TRAIN] Iter: 50000 Loss: 0.005627604201436043  PSNR: 25.952051162719727  scheduler=exp_decay phase=exp_decay N_rand=1024 lr_ratio=0.7263 lr_muon=7.842e-05 lr_adam=3.877e-04
+[VAL]   Iter: 50000 PSNR: 27.395503997802734
+[TRAIN] Iter: 55000 Loss: 0.0053113182075321674  PSNR: 26.707874298095703  scheduler=exp_decay phase=exp_decay N_rand=1024 lr_ratio=0.7034 lr_muon=7.595e-05 lr_adam=3.755e-04
+[VAL]   Iter: 55000 PSNR: 25.908100128173828
+[TRAIN] Iter: 60000 Loss: 0.005759613122791052  PSNR: 26.192365646362305  scheduler=exp_decay phase=exp_decay N_rand=1024 lr_ratio=0.6813 lr_muon=7.356e-05 lr_adam=3.637e-04
+[VAL]   Iter: 60000 PSNR: 24.9254207611084
+[TRAIN] Iter: 65000 Loss: 0.010000906884670258  PSNR: 23.743358612060547  scheduler=exp_decay phase=exp_decay N_rand=1024 lr_ratio=0.6599 lr_muon=7.124e-05 lr_adam=3.522e-04
+[VAL]   Iter: 65000 PSNR: 24.347322463989258
+[TRAIN] Iter: 70000 Loss: 0.008435473777353764  PSNR: 25.44501304626465  scheduler=exp_decay phase=exp_decay N_rand=1024 lr_ratio=0.6391 lr_muon=6.900e-05 lr_adam=3.411e-04
+[VAL]   Iter: 70000 PSNR: 24.846240997314453
+[TRAIN] Iter: 75000 Loss: 0.0029864897951483727  PSNR: 28.405330657958984  scheduler=exp_decay phase=exp_decay N_rand=1024 lr_ratio=0.6190 lr_muon=6.683e-05 lr_adam=3.304e-04
+[VAL]   Iter: 75000 PSNR: 24.162567138671875
+[TRAIN] Iter: 80000 Loss: 0.0068143634125590324  PSNR: 26.42263412475586  scheduler=exp_decay phase=exp_decay N_rand=1024 lr_ratio=0.5995 lr_muon=6.473e-05 lr_adam=3.200e-04
+[VAL]   Iter: 80000 PSNR: 26.742630004882812
+[TRAIN] Iter: 85000 Loss: 0.005206283647567034  PSNR: 26.275291442871094  scheduler=exp_decay phase=exp_decay N_rand=1024 lr_ratio=0.5806 lr_muon=6.269e-05 lr_adam=3.099e-04
+[VAL]   Iter: 85000 PSNR: 28.25255012512207
+[TRAIN] Iter: 90000 Loss: 0.0038716208655387163  PSNR: 28.232759475708008  scheduler=exp_decay phase=exp_decay N_rand=1024 lr_ratio=0.5623 lr_muon=6.072e-05 lr_adam=3.002e-04
+[VAL]   Iter: 90000 PSNR: 28.348112106323242
+[TRAIN] Iter: 95000 Loss: 0.007765381596982479  PSNR: 25.309385299682617  scheduler=exp_decay phase=exp_decay N_rand=1024 lr_ratio=0.5446 lr_muon=5.881e-05 lr_adam=2.907e-04
+[VAL]   Iter: 95000 PSNR: 28.361434936523438
+Saved checkpoints at /data1/greenx9/LRP_algo/logs/100_muon_exp_decay_lrp39/100_muon_materials_materials_trial015_mlr1p08e-04_alr5p34e-04_decay360_mom0p950/100000.tar
+val poses shape torch.Size([13, 4, 4])
+0 0.0005643367767333984
+torch.Size([400, 400, 3]) torch.Size([400, 400])
+1 14.667898893356323
+2 14.620669841766357
+3 8.309256076812744
+4 6.444658279418945
+5 6.445770263671875
+6 6.444905996322632
+7 6.442397117614746
+8 6.443538188934326
+9 6.447057008743286
+10 6.445266246795654
+11 6.448676109313965
+12 6.4439027309417725
+[HPO_VAL] Iter: 100000 mean_psnr: 26.308034 mean_mse: 0.0024971989
+[TRAIN] Iter: 100000 Loss: 0.005863824859261513  PSNR: 27.4084529876709  scheduler=exp_decay phase=exp_decay N_rand=1024 lr_ratio=0.5275 lr_muon=5.695e-05 lr_adam=2.816e-04
+[VAL]   Iter: 100000 PSNR: 28.468008041381836

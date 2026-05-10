@@ -1,0 +1,46 @@
+Loaded blender (138, 400, 400, 4) torch.Size([40, 4, 4]) [400, 400, 555.5555155968841] ./data/nerf_synthetic/ficus
+Param split: Muon=20 tensors, Adam=28 tensors
+INFO: Aux sign optimizer configured. Hidden params: 20, Aux params: 28.
+Found ckpts ['/data1/greenx9/LRP_algo/logs/100_muon_exp_decay_lrp39/100_muon_ficus_ficus_trial005_mlr3p60e-03_alr3p78e-04_decay100_mom0p950/100000.tar']
+Reloading from /data1/greenx9/LRP_algo/logs/100_muon_exp_decay_lrp39/100_muon_ficus_ficus_trial005_mlr3p60e-03_alr3p78e-04_decay100_mom0p950/100000.tar
+Loaded optimizer_state_dict from checkpoint.
+Not ndc!
+EVAL TESTSET ONLY
+test poses shape (25, 4, 4)
+test output dir /data1/greenx9/LRP_algo/logs/100_muon_exp_decay_lrp39/100_muon_ficus_ficus_trial005_mlr3p60e-03_alr3p78e-04_decay100_mom0p950/testset_eval
+test metrics json /data1/greenx9/LRP_algo/logs/100_muon_exp_decay_lrp39/100_muon_ficus_ficus_trial005_mlr3p60e-03_alr3p78e-04_decay100_mom0p950/test_metrics_eval.json
+0 0.007848501205444336
+torch.Size([400, 400, 3]) torch.Size([400, 400])
+1 6.567192554473877
+2 6.346668004989624
+3 6.356432914733887
+4 6.366886138916016
+5 6.393535614013672
+6 6.403773546218872
+7 6.4000115394592285
+8 6.4083898067474365
+9 6.412017107009888
+10 6.415958881378174
+11 6.421792030334473
+12 6.42464017868042
+13 6.427515983581543
+14 6.424811124801636
+15 6.42986536026001
+16 6.43280029296875
+17 6.434891223907471
+18 6.435185670852661
+19 6.44184684753418
+20 6.445647239685059
+21 6.449876546859741
+22 6.454363822937012
+23 6.454998016357422
+24 6.456891298294067
+[WARN] LPIPS computation skipped: LPIPS metric requires the `lpips` package. Install it with `pip install lpips`. If torchvision pretrained weights are not cached, the first run may also download the backbone weights.
+============================================================
+Saved test metrics to: /data1/greenx9/LRP_algo/logs/100_muon_exp_decay_lrp39/100_muon_ficus_ficus_trial005_mlr3p60e-03_alr3p78e-04_decay100_mom0p950/test_metrics_eval.json
+Saved rendered test images to: /data1/greenx9/LRP_algo/logs/100_muon_exp_decay_lrp39/100_muon_ficus_ficus_trial005_mlr3p60e-03_alr3p78e-04_decay100_mom0p950/testset_eval
+Saved test README to: /data1/greenx9/LRP_algo/logs/100_muon_exp_decay_lrp39/100_muon_ficus_ficus_trial005_mlr3p60e-03_alr3p78e-04_decay100_mom0p950/README.txt
+mean_psnr : 29.408616950355707
+mean_ssim : 0.9666991376876831
+mean_lpips: None
+[TEST_METRICS] mean_psnr: 29.408617 mean_ssim: 0.966699 mean_lpips: None

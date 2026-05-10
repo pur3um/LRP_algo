@@ -1,0 +1,46 @@
+Loaded blender (138, 400, 400, 4) torch.Size([40, 4, 4]) [400, 400, 555.5555155968841] ./data/nerf_synthetic/chair
+Param split: Muon=20 tensors, Adam=28 tensors
+INFO: Aux sign optimizer configured. Hidden params: 20, Aux params: 28.
+Found ckpts ['/data1/greenx9/LRP_algo/logs/100_muon_exp_decay_lrp39/100_muon_chair_chair_trial002_mlr3p70e-03_alr5p70e-04_decay146_mom0p950/100000.tar']
+Reloading from /data1/greenx9/LRP_algo/logs/100_muon_exp_decay_lrp39/100_muon_chair_chair_trial002_mlr3p70e-03_alr5p70e-04_decay146_mom0p950/100000.tar
+Loaded optimizer_state_dict from checkpoint.
+Not ndc!
+EVAL TESTSET ONLY
+test poses shape (25, 4, 4)
+test output dir /data1/greenx9/LRP_algo/logs/100_muon_exp_decay_lrp39/100_muon_chair_chair_trial002_mlr3p70e-03_alr5p70e-04_decay146_mom0p950/testset_eval
+test metrics json /data1/greenx9/LRP_algo/logs/100_muon_exp_decay_lrp39/100_muon_chair_chair_trial002_mlr3p70e-03_alr5p70e-04_decay146_mom0p950/test_metrics_eval.json
+0 0.005793571472167969
+torch.Size([400, 400, 3]) torch.Size([400, 400])
+1 6.6387245655059814
+2 6.385297775268555
+3 6.413947343826294
+4 6.423290014266968
+5 6.428517580032349
+6 6.43674898147583
+7 6.446198225021362
+8 6.441367149353027
+9 6.449683427810669
+10 6.4423534870147705
+11 6.4455626010894775
+12 6.4524054527282715
+13 6.451768636703491
+14 6.455320596694946
+15 6.455145835876465
+16 6.454398155212402
+17 6.454333543777466
+18 6.452432155609131
+19 6.45561408996582
+20 6.458402872085571
+21 6.457642078399658
+22 6.451964855194092
+23 6.453963994979858
+24 6.451188802719116
+[WARN] LPIPS computation skipped: LPIPS metric requires the `lpips` package. Install it with `pip install lpips`. If torchvision pretrained weights are not cached, the first run may also download the backbone weights.
+============================================================
+Saved test metrics to: /data1/greenx9/LRP_algo/logs/100_muon_exp_decay_lrp39/100_muon_chair_chair_trial002_mlr3p70e-03_alr5p70e-04_decay146_mom0p950/test_metrics_eval.json
+Saved rendered test images to: /data1/greenx9/LRP_algo/logs/100_muon_exp_decay_lrp39/100_muon_chair_chair_trial002_mlr3p70e-03_alr5p70e-04_decay146_mom0p950/testset_eval
+Saved test README to: /data1/greenx9/LRP_algo/logs/100_muon_exp_decay_lrp39/100_muon_chair_chair_trial002_mlr3p70e-03_alr5p70e-04_decay146_mom0p950/README.txt
+mean_psnr : 34.19548479715412
+mean_ssim : 0.9777086520195007
+mean_lpips: None
+[TEST_METRICS] mean_psnr: 34.195485 mean_ssim: 0.977709 mean_lpips: None

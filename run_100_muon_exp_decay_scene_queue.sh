@@ -3,21 +3,21 @@ set -euo pipefail
 
 cd /home/greenx9/data/LRP_algo
 
-if [ -f "$HOME/anaconda3/etc/profile.d/conda.sh" ]; then
-    source "$HOME/anaconda3/etc/profile.d/conda.sh"
-elif [ -f "$HOME/miniconda3/etc/profile.d/conda.sh" ]; then
+if [ -f "$HOME/miniconda3/etc/profile.d/conda.sh" ]; then
     source "$HOME/miniconda3/etc/profile.d/conda.sh"
+elif [ -f "$HOME/anaconda3/etc/profile.d/conda.sh" ]; then
+    source "$HOME/anaconda3/etc/profile.d/conda.sh"
 else
     source "$HOME/.bashrc"
 fi
 
-conda activate lrp
+conda activate lrp39
 
 ROOT=/home/greenx9/data/LRP_algo
 RUN_FILE=00_run_nerf_ranksched_final.py
 
-BASEDIR=logs/100_muon_exp_decay
-LOGDIR=logs/100_muon_exp_decay_main_logs
+BASEDIR=logs/100_muon_exp_decay_lrp39
+LOGDIR=logs/100_muon_exp_decay_lrp39_main_logs
 
 mkdir -p "$BASEDIR"
 mkdir -p "$LOGDIR"
@@ -39,7 +39,7 @@ run_scene () {
 
     echo "=================================================="
     echo "[START] scene=${SCENE}, gpus=${GPUS}, test_gpu=${TEST_GPU}"
-    echo "optimizer=${OPTIMIZER}, scheduler=${SCHEDULER}"
+    echo "optimizer=${OPTIMIZER}, scheduler=${SCHEDULER}, env=lrp39"
     echo "=================================================="
 
     python -u 00_GPT_gp_search.py \
@@ -64,8 +64,8 @@ run_scene () {
     echo "=================================================="
 }
 
-# Round 1: 3 scenes simultaneously
-run_scene chair "0,0,1,1" 0 &
+# Round 1: 3 scenes simultaneously, GPU 0/1 unused
+run_scene chair "6,6,7,7" 6 &
 PID1=$!
 
 run_scene drums "2,2,3,3" 2 &
@@ -81,7 +81,7 @@ wait $PID3
 echo "[ROUND 1 DONE] chair, drums, ficus"
 
 # Round 2
-run_scene hotdog "0,0,1,1" 0 &
+run_scene hotdog "6,6,7,7" 6 &
 PID1=$!
 
 run_scene lego "2,2,3,3" 2 &
@@ -97,7 +97,7 @@ wait $PID3
 echo "[ROUND 2 DONE] hotdog, lego, materials"
 
 # Round 3
-run_scene mic "0,0,1,1" 0 &
+run_scene mic "6,6,7,7" 6 &
 PID1=$!
 
 run_scene ship "2,2,3,3" 2 &
