@@ -1,6 +1,6 @@
 #? adam + exp_decay (2-D BO, n=20)
 python -u 00_GPT_gp_search.py \
-  --root /home/greenx9/cnfr/ProPolar_NeurIPS26/nerf-pytorch/LRP_algo \
+  --root /home/greenx9/data2/LRP_algo \
   --run_file 00_run_nerf_ranksched_final.py \
   --config configs/chair.txt \
   --basedir logs/GP_20hp \
@@ -14,7 +14,7 @@ python -u 00_GPT_gp_search.py \
   > logs/GP_hyp20_log/chair/chair_adam_exp_2gpu.log 2>&1 &
 
 python -u 00_GPT_gp_search.py \
-  --root /home/greenx9/cnfr/ProPolar_NeurIPS26/nerf-pytorch/LRP_algo \
+  --root /home/greenx9/data2/LRP_algo \
   --run_file 00_run_nerf_ranksched_final.py \
   --config configs/chair.txt \
   --basedir logs/GP_20hp \
@@ -29,7 +29,7 @@ python -u 00_GPT_gp_search.py \
 #================================================
 #? aux-muon + exp_decay (10-D BO, n=20)
 python -u 00_GPT_gp_search.py \
-  --root /home/greenx9/cnfr/ProPolar_NeurIPS26/nerf-pytorch/LRP_algo \
+  --root /home/greenx9/data2/LRP_algo \
   --run_file 00_run_nerf_ranksched_final.py \
   --config configs/chair.txt \
   --basedir logs/GP_20hp \
@@ -43,7 +43,7 @@ python -u 00_GPT_gp_search.py \
   > logs/GP_hyp20_log/chair/chair_muon_exp_2gpu.log 2>&1 &
 
 python -u 00_GPT_gp_search.py \
-  --root /home/greenx9/cnfr/ProPolar_NeurIPS26/nerf-pytorch/LRP_algo \
+  --root /home/greenx9/data2/LRP_algo \
   --run_file 00_run_nerf_ranksched_final.py \
   --config configs/chair.txt \
   --basedir logs/GP_20hp \
@@ -59,7 +59,7 @@ python -u 00_GPT_gp_search.py \
 #? aux-sign-auto-cos-inc + rank_wsd (19-D BO, n=20 기본)
 # 차원이 19로 매우 큼 → 가능하면 --n_trials_ours 30 ~ 40 권장. 아래는 두 버전을 모두 보임.
 python -u 00_GPT_gp_search.py \
-  --root /home/greenx9/cnfr/ProPolar_NeurIPS26/nerf-pytorch/LRP_algo \
+  --root /home/greenx9/data2/LRP_algo \
   --run_file 00_run_nerf_ranksched_final.py \
   --config configs/chair.txt \
   --basedir logs/GP_20hp \
@@ -73,7 +73,7 @@ python -u 00_GPT_gp_search.py \
   > logs/GP_hyp20_log/chair/chair_ours_wsd_2gpu.log 2>&1 &
 
 python -u 00_GPT_gp_search.py \
-  --root /home/greenx9/cnfr/ProPolar_NeurIPS26/nerf-pytorch/LRP_algo \
+  --root /home/greenx9/data2/LRP_algo \
   --run_file 00_run_nerf_ranksched_final.py \
   --config configs/chair.txt \
   --basedir logs/GP_20hp \
@@ -88,7 +88,7 @@ python -u 00_GPT_gp_search.py \
 
 # 차원에 맞춰 예산 증가 (추천)
 python -u 00_GPT_gp_search.py \
-  --root /home/greenx9/cnfr/ProPolar_NeurIPS26/nerf-pytorch/LRP_algo \
+  --root /home/greenx9/data2/LRP_algo \
   --run_file 00_run_nerf_ranksched_final.py \
   --config configs/chair.txt \
   --basedir logs/GP_20hp \
@@ -102,7 +102,7 @@ python -u 00_GPT_gp_search.py \
   > logs/GP_hyp20_log/chair/chair_ours_wsd_2gpu_big.log 2>&1 &
 
 python -u 00_GPT_gp_search.py \
-  --root /home/greenx9/cnfr/ProPolar_NeurIPS26/nerf-pytorch/LRP_algo \
+  --root /home/greenx9/data2/LRP_algo \
   --run_file 00_run_nerf_ranksched_final.py \
   --config configs/chair.txt \
   --basedir logs/GP_20hp \
@@ -117,7 +117,7 @@ python -u 00_GPT_gp_search.py \
 #================================================
 #? 세 페어를 순차로 한 번에 (--pair all)
 python -u 00_GPT_gp_search.py \
-  --root /home/greenx9/cnfr/ProPolar_NeurIPS26/nerf-pytorch/LRP_algo \
+  --root /home/greenx9/data2/LRP_algo \
   --run_file 00_run_nerf_ranksched_final.py \
   --config configs/chair.txt \
   --basedir logs/GP_20hp \
@@ -132,7 +132,7 @@ python -u 00_GPT_gp_search.py \
   > logs/GP_hyp20_log/chair/chair_all_2gpu.log 2>&1 &
 
 python -u 00_GPT_gp_search.py \
-  --root /home/greenx9/cnfr/ProPolar_NeurIPS26/nerf-pytorch/LRP_algo \
+  --root /home/greenx9/data2/LRP_algo \
   --run_file 00_run_nerf_ranksched_final.py \
   --config configs/chair.txt \
   --basedir logs/GP_20hp \
