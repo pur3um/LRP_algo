@@ -2,16 +2,16 @@
 python -u 00_GPT_gp_search.py \
   --root /home/greenx9/data2/LRP_algo \
   --run_file 00_run_nerf_ranksched_final.py \
-  --config configs/chair.txt \
+  --config configs/drums.txt \
   --basedir logs/GP_20hp \
-  --exp_prefix chair_20hp \
+  --exp_prefix drums_20hp \
   --pair adam+exp_decay \
   --n_trials 20 --batch_size 2 --n_init 4 \
   --n_iters 100000 \
-  --gpus 0,1 \
-  --test_gpu 0 \
+  --gpus 6,7 \
+  --test_gpu 7 \
   --deterministic \
-  > logs/GP_hyp20_log/chair/chair_adam_exp_2gpu.log 2>&1 &
+  > logs/GP_hyp20_log/drums/drums_adam_exp_2gpu.log 2>&1 &
 
 python -u 00_GPT_gp_search.py \
   --root /home/greenx9/data2/LRP_algo \
@@ -31,16 +31,16 @@ python -u 00_GPT_gp_search.py \
 python -u 00_GPT_gp_search.py \
   --root /home/greenx9/data2/LRP_algo \
   --run_file 00_run_nerf_ranksched_final.py \
-  --config configs/chair.txt \
+  --config configs/drums.txt \
   --basedir logs/GP_20hp \
-  --exp_prefix chair_20hp \
+  --exp_prefix drums_20hp \
   --pair muon+exp_decay \
   --n_trials 20 --batch_size 2 --n_init 4 \
   --n_iters 100000 \
-  --gpus 0,1 \
-  --test_gpu 0 \
+  --gpus 4,5 \
+  --test_gpu 4 \
   --deterministic \
-  > logs/GP_hyp20_log/chair/chair_muon_exp_2gpu.log 2>&1 &
+  > logs/GP_hyp20_log/drums/drums_muon_exp_2gpu.log 2>&1 &
 
 python -u 00_GPT_gp_search.py \
   --root /home/greenx9/data2/LRP_algo \
@@ -61,16 +61,16 @@ python -u 00_GPT_gp_search.py \
 python -u 00_GPT_gp_search.py \
   --root /home/greenx9/data2/LRP_algo \
   --run_file 00_run_nerf_ranksched_final.py \
-  --config configs/chair.txt \
+  --config configs/drums.txt \
   --basedir logs/GP_20hp \
-  --exp_prefix chair_20hp \
+  --exp_prefix drums_20hp \
   --pair ours+rank_wsd \
   --n_trials 20 --batch_size 2 --n_init 4 \
   --n_iters 100000 \
-  --gpus 6,7 \
-  --test_gpu 0 \
+  --gpus 4,5 \
+  --test_gpu 4 \
   --deterministic \
-  > logs/GP_hyp20_log/chair/chair_ours_wsd_2gpu.log 2>&1 &
+  > logs/GP_hyp20_log/drums/drums_ours_wsd_2gpu.log 2>&1 &
 
 python -u 00_GPT_gp_search.py \
   --root /home/greenx9/data2/LRP_algo \
@@ -81,8 +81,8 @@ python -u 00_GPT_gp_search.py \
   --pair ours+rank_wsd \
   --n_trials 20 --batch_size 4 --n_init 4 \
   --n_iters 100000 \
-  --gpus 0,1,2,3 \
-  --test_gpu 0 \
+  --gpus 1,2,3,4 \
+  --test_gpu 1 \
   --deterministic \
   > logs/GP_hyp20_log/chair/chair_ours_wsd_4gpu.log 2>&1 &
 

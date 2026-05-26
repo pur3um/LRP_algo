@@ -1,0 +1,47 @@
+Loaded blender (138, 400, 400, 4) torch.Size([40, 4, 4]) [400, 400, 555.5555155968841] ./data/nerf_synthetic/chair
+Param split: Muon=20 tensors, Adam=28 tensors
+INFO: Aux sign optimizer configured. Hidden params: 20, Aux params: 28.
+Found ckpts ['/data2/greenx9/LRP_algo/logs/GP_20hp/chair_20hp_muonexp_chair_t016_lr3p56e-04_mlr5p00e-03_d210/100000.tar']
+Reloading from /data2/greenx9/LRP_algo/logs/GP_20hp/chair_20hp_muonexp_chair_t016_lr3p56e-04_mlr5p00e-03_d210/100000.tar
+Loaded optimizer_state_dict from checkpoint.
+Not ndc!
+EVAL TESTSET ONLY
+test poses shape (25, 4, 4)
+test output dir /data2/greenx9/LRP_algo/logs/GP_20hp/chair_20hp_muonexp_chair_t016_lr3p56e-04_mlr5p00e-03_d210/testset_eval
+test metrics json /data2/greenx9/LRP_algo/logs/GP_20hp/chair_20hp_muonexp_chair_t016_lr3p56e-04_mlr5p00e-03_d210/test_metrics_eval.json
+0 0.0022306442260742188
+torch.Size([400, 400, 3]) torch.Size([400, 400])
+1 6.338221549987793
+2 6.062134742736816
+3 6.071872711181641
+4 6.077126502990723
+5 6.083248138427734
+6 6.123521327972412
+7 6.124400615692139
+8 6.146329402923584
+9 6.189639568328857
+10 6.243868112564087
+11 6.39477014541626
+12 6.467881917953491
+13 6.497349739074707
+14 6.475095272064209
+15 6.47357964515686
+16 6.457937002182007
+17 6.463053226470947
+18 6.496672630310059
+19 6.45664644241333
+20 6.456629276275635
+21 6.4482643604278564
+22 6.465914249420166
+23 6.448986053466797
+24 6.4551897048950195
+Setting up [LPIPS] perceptual loss: trunk [alex], v[0.1], spatial [off]
+Loading model from: /home/greenx9/miniconda3/envs/lrp310/lib/python3.10/site-packages/lpips/weights/v0.1/alex.pth
+============================================================
+Saved test metrics to: /data2/greenx9/LRP_algo/logs/GP_20hp/chair_20hp_muonexp_chair_t016_lr3p56e-04_mlr5p00e-03_d210/test_metrics_eval.json
+Saved rendered test images to: /data2/greenx9/LRP_algo/logs/GP_20hp/chair_20hp_muonexp_chair_t016_lr3p56e-04_mlr5p00e-03_d210/testset_eval
+Saved test README to: /data2/greenx9/LRP_algo/logs/GP_20hp/chair_20hp_muonexp_chair_t016_lr3p56e-04_mlr5p00e-03_d210/README.txt
+mean_psnr : 33.851159254531595
+mean_ssim : 0.9765648603439331
+mean_lpips: 0.016043717823922634
+[TEST_METRICS] mean_psnr: 33.851159 mean_ssim: 0.976565 mean_lpips: 0.016043717823922634

@@ -1,0 +1,47 @@
+Loaded blender (138, 400, 400, 4) torch.Size([40, 4, 4]) [400, 400, 555.5555155968841] ./data/nerf_synthetic/chair
+Param split: Muon=20 tensors, Adam=28 tensors
+INFO: Sign Auto Cos increase optimizer configured. Hidden params: 20, Aux params: 28.
+Found ckpts ['/data2/greenx9/LRP_algo/logs/GP_20hp/chair_20hp_ourswsd_chair_t018_lr1p03e-03_mlr4p22e-03_minr0p06/100000.tar']
+Reloading from /data2/greenx9/LRP_algo/logs/GP_20hp/chair_20hp_ourswsd_chair_t018_lr1p03e-03_mlr4p22e-03_minr0p06/100000.tar
+Loaded optimizer_state_dict from checkpoint.
+Not ndc!
+EVAL TESTSET ONLY
+test poses shape (25, 4, 4)
+test output dir /data2/greenx9/LRP_algo/logs/GP_20hp/chair_20hp_ourswsd_chair_t018_lr1p03e-03_mlr4p22e-03_minr0p06/testset_eval
+test metrics json /data2/greenx9/LRP_algo/logs/GP_20hp/chair_20hp_ourswsd_chair_t018_lr1p03e-03_mlr4p22e-03_minr0p06/test_metrics_eval.json
+0 0.0017666816711425781
+torch.Size([400, 400, 3]) torch.Size([400, 400])
+1 6.302736282348633
+2 6.093703508377075
+3 6.111443519592285
+4 6.126410961151123
+5 6.146349191665649
+6 6.16717529296875
+7 6.181096792221069
+8 6.188361406326294
+9 6.199697256088257
+10 6.222103118896484
+11 6.232151746749878
+12 6.242109537124634
+13 6.249326705932617
+14 6.257176160812378
+15 6.260194540023804
+16 6.26836633682251
+17 6.279932498931885
+18 6.284286022186279
+19 6.286194086074829
+20 6.292156934738159
+21 6.296663284301758
+22 6.297961473464966
+23 6.299850225448608
+24 6.301446914672852
+Setting up [LPIPS] perceptual loss: trunk [alex], v[0.1], spatial [off]
+Loading model from: /home/greenx9/miniconda3/envs/lrp310/lib/python3.10/site-packages/lpips/weights/v0.1/alex.pth
+============================================================
+Saved test metrics to: /data2/greenx9/LRP_algo/logs/GP_20hp/chair_20hp_ourswsd_chair_t018_lr1p03e-03_mlr4p22e-03_minr0p06/test_metrics_eval.json
+Saved rendered test images to: /data2/greenx9/LRP_algo/logs/GP_20hp/chair_20hp_ourswsd_chair_t018_lr1p03e-03_mlr4p22e-03_minr0p06/testset_eval
+Saved test README to: /data2/greenx9/LRP_algo/logs/GP_20hp/chair_20hp_ourswsd_chair_t018_lr1p03e-03_mlr4p22e-03_minr0p06/README.txt
+mean_psnr : 34.49184337504493
+mean_ssim : 0.9788142561912536
+mean_lpips: 0.013942093383520841
+[TEST_METRICS] mean_psnr: 34.491843 mean_ssim: 0.978814 mean_lpips: 0.013942093383520841

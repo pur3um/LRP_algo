@@ -1,0 +1,111 @@
+{
+  "scene": "chair",
+  "pairs": [
+    "adam+exp_decay"
+  ],
+  "hp_registry": {
+    "lrate": {
+      "kind": "log",
+      "low": 0.0001,
+      "high": 0.002
+    },
+    "muon_lrate": {
+      "kind": "log",
+      "low": 0.0001,
+      "high": 0.005
+    },
+    "muon_momentum": {
+      "kind": "uniform",
+      "low": 0.85,
+      "high": 0.99
+    },
+    "muon_decay": {
+      "kind": "log",
+      "low": 1e-06,
+      "high": 0.01
+    },
+    "lowrank_ns_steps": {
+      "kind": "int",
+      "low": 3,
+      "high": 10
+    },
+    "muon_aux_beta1": {
+      "kind": "uniform",
+      "low": 0.85,
+      "high": 0.95
+    },
+    "muon_aux_beta2": {
+      "kind": "uniform",
+      "low": 0.95,
+      "high": 0.9999
+    },
+    "muon_aux_eps": {
+      "kind": "log",
+      "low": 1e-06,
+      "high": 0.001
+    },
+    "muon_aux_weight_decay": {
+      "kind": "log",
+      "low": 1e-06,
+      "high": 0.01
+    },
+    "lrate_decay": {
+      "kind": "int",
+      "low": 100,
+      "high": 500
+    },
+    "sched_warmup_frac": {
+      "kind": "uniform",
+      "low": 0.005,
+      "high": 0.05
+    },
+    "sched_min_lr_ratio": {
+      "kind": "uniform",
+      "low": 0.05,
+      "high": 0.5
+    },
+    "sched_decay_start_frac": {
+      "kind": "uniform",
+      "low": 0.5,
+      "high": 0.9
+    },
+    "lowrank_rank_start": {
+      "kind": "int",
+      "low": 50,
+      "high": 200
+    },
+    "lowrank_rank_end": {
+      "kind": "int",
+      "low": 150,
+      "high": 350
+    },
+    "lowrank_oversample": {
+      "kind": "int",
+      "low": 2,
+      "high": 8
+    },
+    "lowrank_init_energy": {
+      "kind": "uniform",
+      "low": 0.85,
+      "high": 0.9999
+    },
+    "lowrank_init_probe_steps": {
+      "kind": "int",
+      "low": 4,
+      "high": 32
+    },
+    "lowrank_init_round_multiple": {
+      "kind": "int",
+      "low": 4,
+      "high": 16
+    },
+    "rank_schedule_default_frac": {
+      "kind": "uniform",
+      "low": 0.5,
+      "high": 0.95
+    }
+  },
+  "results": {
+    "adam+exp_decay": "/data2/greenx9/LRP_algo/logs/botorch_ranksched_20hp/adam+exp_decay/chair/chair_adam+exp_decay_summary.json"
+  }
+}

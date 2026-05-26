@@ -1,0 +1,45 @@
+====================================================================================================
+run_start_time: 2026-05-23 11:27:38
+script: run_nerf_ranksched.py
+expname: drums_20hp_muonexp_drums_t002_lr4p81e-04_mlr4p60e-03_d229
+dataset_type: blender
+datadir: ./data/nerf_synthetic/drums
+resume_start_step: 0
+optimizer_setup:
+  optimizer_main: Muon
+  muon_lr_init: 0.0046049471
+  muon_weight_decay: 3.4882471e-06
+  muon_momentum: 0.856233
+  optimizer_aux: Adam
+  aux_adam_lr_init: 0.00048059252
+  aux_adam_betas: (0.9, 0.999)
+  lrate_decay_ksteps: 229
+  muon_tensor_count: 48
+  muon_total_params: 1191688
+scheduler_setup:
+  scheduler_name: exp_decay
+  lrate_decay_ksteps: 229
+  decay_rate: 0.1
+  decay_steps: 229000.0
+train_psnr_log:
+iter=5000 global_step=4999 loss=0.0195607804 psnr=20.744661 muon_lr=4.37924576e-03 adam_lr=4.57037336e-04
+iter=10000 global_step=9999 loss=0.0117390640 psnr=23.393139 muon_lr=4.16452292e-03 adam_lr=4.34627917e-04
+iter=15000 global_step=14999 loss=0.0095158480 psnr=23.865767 muon_lr=3.96032836e-03 adam_lr=4.13317275e-04
+iter=20000 global_step=19999 loss=0.0080624456 psnr=25.273800 muon_lr=3.76614585e-03 adam_lr=3.93051535e-04
+iter=25000 global_step=24999 loss=0.0067913327 psnr=26.429197 muon_lr=3.58148448e-03 adam_lr=3.73779462e-04
+iter=30000 global_step=29999 loss=0.0076775216 psnr=26.031178 muon_lr=3.40587741e-03 adam_lr=3.55452337e-04
+iter=35000 global_step=34999 loss=0.0094916634 psnr=24.446888 muon_lr=3.23888070e-03 adam_lr=3.38023826e-04
+iter=40000 global_step=39999 loss=0.0068184547 psnr=26.289543 muon_lr=3.08007215e-03 adam_lr=3.21449868e-04
+iter=45000 global_step=44999 loss=0.0061056241 psnr=26.174789 muon_lr=2.92905029e-03 adam_lr=3.05688563e-04
+iter=50000 global_step=49999 loss=0.0083512040 psnr=26.252708 muon_lr=2.78543333e-03 adam_lr=2.90700065e-04
+iter=55000 global_step=54999 loss=0.0061107413 psnr=26.916069 muon_lr=2.64885818e-03 adam_lr=2.76446482e-04
+iter=60000 global_step=59999 loss=0.0067254570 psnr=27.227631 muon_lr=2.51897957e-03 adam_lr=2.62891780e-04
+iter=65000 global_step=64999 loss=0.0059802667 psnr=26.979086 muon_lr=2.39546916e-03 adam_lr=2.50001691e-04
+iter=70000 global_step=69999 loss=0.0067346781 psnr=26.797586 muon_lr=2.27801471e-03 adam_lr=2.37743627e-04
+iter=75000 global_step=74999 loss=0.0074703549 psnr=26.393936 muon_lr=2.16631927e-03 adam_lr=2.26086600e-04
+iter=80000 global_step=79999 loss=0.0069296318 psnr=25.836716 muon_lr=2.06010047e-03 adam_lr=2.15001140e-04
+iter=85000 global_step=84999 loss=0.0078681260 psnr=26.522316 muon_lr=1.95908978e-03 adam_lr=2.04459221e-04
+iter=90000 global_step=89999 loss=0.0078793466 psnr=25.464611 muon_lr=1.86303185e-03 adam_lr=1.94434192e-04
+iter=95000 global_step=94999 loss=0.0051343627 psnr=27.673840 muon_lr=1.77168381e-03 adam_lr=1.84900710e-04
+iter=100000 global_step=99999 loss=0.0053361515 psnr=29.269016 muon_lr=1.68481475e-03 adam_lr=1.75834673e-04
+iter=100000 global_step=100000 loss=0.0053361515 psnr=29.269016 muon_lr=1.68481475e-03 adam_lr=1.75834673e-04

@@ -1,0 +1,46 @@
+Loaded blender (138, 400, 400, 4) torch.Size([40, 4, 4]) [400, 400, 625.0000252084244] ./data/nerf_synthetic/drums
+Param split: Muon=20 tensors, Adam=28 tensors
+Found ckpts ['/data2/greenx9/LRP_algo/logs/GP_20hp/drums_20hp_adamexp_drums_t000_lr4p15e-04_d337/100000.tar']
+Reloading from /data2/greenx9/LRP_algo/logs/GP_20hp/drums_20hp_adamexp_drums_t000_lr4p15e-04_d337/100000.tar
+Loaded optimizer_state_dict from checkpoint.
+Not ndc!
+EVAL TESTSET ONLY
+test poses shape (25, 4, 4)
+test output dir /data2/greenx9/LRP_algo/logs/GP_20hp/drums_20hp_adamexp_drums_t000_lr4p15e-04_d337/testset_eval
+test metrics json /data2/greenx9/LRP_algo/logs/GP_20hp/drums_20hp_adamexp_drums_t000_lr4p15e-04_d337/test_metrics_eval.json
+0 0.0020291805267333984
+torch.Size([400, 400, 3]) torch.Size([400, 400])
+1 6.515253305435181
+2 6.200587749481201
+3 6.208073854446411
+4 6.205705881118774
+5 6.215021133422852
+6 6.256598234176636
+7 6.239890098571777
+8 6.253522634506226
+9 6.263853311538696
+10 6.242779731750488
+11 6.239820718765259
+12 6.242556571960449
+13 6.24538254737854
+14 6.249668836593628
+15 6.249619960784912
+16 6.26181435585022
+17 6.259545803070068
+18 6.255847930908203
+19 6.252584934234619
+20 6.252586126327515
+21 6.269980192184448
+22 6.247627258300781
+23 6.256659507751465
+24 6.2517406940460205
+Setting up [LPIPS] perceptual loss: trunk [alex], v[0.1], spatial [off]
+Loading model from: /home/greenx9/miniconda3/envs/lrp310/lib/python3.10/site-packages/lpips/weights/v0.1/alex.pth
+============================================================
+Saved test metrics to: /data2/greenx9/LRP_algo/logs/GP_20hp/drums_20hp_adamexp_drums_t000_lr4p15e-04_d337/test_metrics_eval.json
+Saved rendered test images to: /data2/greenx9/LRP_algo/logs/GP_20hp/drums_20hp_adamexp_drums_t000_lr4p15e-04_d337/testset_eval
+Saved test README to: /data2/greenx9/LRP_algo/logs/GP_20hp/drums_20hp_adamexp_drums_t000_lr4p15e-04_d337/README.txt
+mean_psnr : 25.08485358548994
+mean_ssim : 0.9240030407905578
+mean_lpips: 0.06566159069538116
+[TEST_METRICS] mean_psnr: 25.084854 mean_ssim: 0.924003 mean_lpips: 0.06566159069538116

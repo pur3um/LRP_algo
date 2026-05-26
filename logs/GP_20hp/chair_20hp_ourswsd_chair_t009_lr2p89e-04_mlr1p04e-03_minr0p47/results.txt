@@ -1,0 +1,59 @@
+====================================================================================================
+run_start_time: 2026-05-16 16:43:26
+script: run_nerf_ranksched.py
+expname: chair_20hp_ourswsd_chair_t009_lr2p89e-04_mlr1p04e-03_minr0p47
+dataset_type: blender
+datadir: ./data/nerf_synthetic/chair
+resume_start_step: 0
+optimizer_setup:
+  optimizer_main: Muon
+  muon_lr_init: 0.0010364269
+  muon_weight_decay: 2.0957435e-05
+  muon_momentum: 0.922259
+  optimizer_aux: Adam
+  aux_adam_lr_init: 0.00028880875
+  aux_adam_betas: (0.9, 0.999)
+  lrate_decay_ksteps: 500
+  muon_tensor_count: 48
+  muon_total_params: 1191688
+scheduler_setup:
+  scheduler_name: rank_wsd
+  warmup_steps: 3959
+  min_lr_ratio: 0.468607
+  decay_start_step: 86673
+train_psnr_log:
+  lowrank_schedule:
+    rank_start: 182
+    rank_end: 343
+    schedule: cosine_increase_closed_form
+    schedule_steps: 95000
+    oversample: 4
+    subspace_iters: 1
+    ns_steps: 9
+    scale_mode: default
+  lowrank_auto_init_start:
+    enabled: True
+    probe_steps: 7
+    energy_tau: 0.995114
+    round_multiple: 11
+iter=5000 global_step=4999 loss=0.0060018096 psnr=26.251726 muon_lr=1.03642690e-03 adam_lr=2.88808750e-04 muon_rank=188 muon_target_rank=343 muon_method=cosine_inc_auto_start
+iter=10000 global_step=9999 loss=0.0045306920 psnr=28.764978 muon_lr=1.03642690e-03 adam_lr=2.88808750e-04 muon_rank=191 muon_target_rank=343 muon_method=cosine_inc_auto_start
+iter=15000 global_step=14999 loss=0.0030602440 psnr=29.131659 muon_lr=1.03642690e-03 adam_lr=2.88808750e-04 muon_rank=196 muon_target_rank=343 muon_method=cosine_inc_auto_start
+iter=20000 global_step=19999 loss=0.0036613909 psnr=29.155647 muon_lr=1.03642690e-03 adam_lr=2.88808750e-04 muon_rank=203 muon_target_rank=343 muon_method=cosine_inc_auto_start
+iter=25000 global_step=24999 loss=0.0011628700 psnr=34.153355 muon_lr=1.03642690e-03 adam_lr=2.88808750e-04 muon_rank=212 muon_target_rank=343 muon_method=cosine_inc_auto_start
+iter=30000 global_step=29999 loss=0.0032956572 psnr=29.786102 muon_lr=1.03642690e-03 adam_lr=2.88808750e-04 muon_rank=222 muon_target_rank=343 muon_method=cosine_inc_auto_start
+iter=35000 global_step=34999 loss=0.0024670279 psnr=31.754974 muon_lr=1.03642690e-03 adam_lr=2.88808750e-04 muon_rank=234 muon_target_rank=343 muon_method=cosine_inc_auto_start
+iter=40000 global_step=39999 loss=0.0019445799 psnr=32.552525 muon_lr=1.03642690e-03 adam_lr=2.88808750e-04 muon_rank=246 muon_target_rank=343 muon_method=cosine_inc_auto_start
+iter=45000 global_step=44999 loss=0.0032010567 psnr=30.631121 muon_lr=1.03642690e-03 adam_lr=2.88808750e-04 muon_rank=259 muon_target_rank=343 muon_method=cosine_inc_auto_start
+iter=50000 global_step=49999 loss=0.0033190951 psnr=29.217344 muon_lr=1.03642690e-03 adam_lr=2.88808750e-04 muon_rank=271 muon_target_rank=343 muon_method=cosine_inc_auto_start
+iter=55000 global_step=54999 loss=0.0033075884 psnr=30.210264 muon_lr=1.03642690e-03 adam_lr=2.88808750e-04 muon_rank=284 muon_target_rank=343 muon_method=cosine_inc_auto_start
+iter=60000 global_step=59999 loss=0.0030637330 psnr=29.947533 muon_lr=1.03642690e-03 adam_lr=2.88808750e-04 muon_rank=296 muon_target_rank=343 muon_method=cosine_inc_auto_start
+iter=65000 global_step=64999 loss=0.0020366861 psnr=31.514948 muon_lr=1.03642690e-03 adam_lr=2.88808750e-04 muon_rank=308 muon_target_rank=343 muon_method=cosine_inc_auto_start
+iter=70000 global_step=69999 loss=0.0010194568 psnr=34.522503 muon_lr=1.03642690e-03 adam_lr=2.88808750e-04 muon_rank=318 muon_target_rank=343 muon_method=cosine_inc_auto_start
+iter=75000 global_step=74999 loss=0.0022855569 psnr=31.379801 muon_lr=1.03642690e-03 adam_lr=2.88808750e-04 muon_rank=327 muon_target_rank=343 muon_method=cosine_inc_auto_start
+iter=80000 global_step=79999 loss=0.0018246074 psnr=32.882023 muon_lr=1.03642690e-03 adam_lr=2.88808750e-04 muon_rank=334 muon_target_rank=343 muon_method=cosine_inc_auto_start
+iter=85000 global_step=84999 loss=0.0024593621 psnr=30.730757 muon_lr=1.03642690e-03 adam_lr=2.88808750e-04 muon_rank=339 muon_target_rank=343 muon_method=cosine_inc_auto_start
+iter=90000 global_step=89999 loss=0.0018545928 psnr=33.359783 muon_lr=8.98966709e-04 adam_lr=2.50504355e-04 muon_rank=342 muon_target_rank=343 muon_method=cosine_inc_auto_start
+iter=95000 global_step=94999 loss=0.0025952710 psnr=31.702099 muon_lr=6.92321805e-04 adam_lr=1.92921078e-04 muon_rank=343 muon_target_rank=343 muon_method=cosine_inc_auto_start
+iter=100000 global_step=99999 loss=0.0013325396 psnr=34.727684 muon_lr=4.85676900e-04 adam_lr=1.35337802e-04 muon_rank=343 muon_target_rank=343 muon_method=cosine_inc_auto_start
+iter=100000 global_step=100000 loss=0.0013325396 psnr=34.727684 muon_lr=4.85676900e-04 adam_lr=1.35337802e-04 muon_rank=343 muon_target_rank=343 muon_method=cosine_inc_auto_start

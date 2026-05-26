@@ -1,0 +1,47 @@
+Loaded blender (138, 400, 400, 4) torch.Size([40, 4, 4]) [400, 400, 625.0000252084244] ./data/nerf_synthetic/drums
+Param split: Muon=20 tensors, Adam=28 tensors
+INFO: Sign Auto Cos increase optimizer configured. Hidden params: 20, Aux params: 28.
+Found ckpts ['/data2/greenx9/LRP_algo/logs/GP_20hp/drums_20hp_ourswsd_drums_t002_lr8p40e-04_mlr4p08e-03_minr0p11/100000.tar']
+Reloading from /data2/greenx9/LRP_algo/logs/GP_20hp/drums_20hp_ourswsd_drums_t002_lr8p40e-04_mlr4p08e-03_minr0p11/100000.tar
+Loaded optimizer_state_dict from checkpoint.
+Not ndc!
+EVAL TESTSET ONLY
+test poses shape (25, 4, 4)
+test output dir /data2/greenx9/LRP_algo/logs/GP_20hp/drums_20hp_ourswsd_drums_t002_lr8p40e-04_mlr4p08e-03_minr0p11/testset_eval
+test metrics json /data2/greenx9/LRP_algo/logs/GP_20hp/drums_20hp_ourswsd_drums_t002_lr8p40e-04_mlr4p08e-03_minr0p11/test_metrics_eval.json
+0 0.002254009246826172
+torch.Size([400, 400, 3]) torch.Size([400, 400])
+1 6.3977556228637695
+2 6.096116781234741
+3 6.110973358154297
+4 6.1157495975494385
+5 6.123429298400879
+6 6.132518768310547
+7 6.127558469772339
+8 6.141034841537476
+9 6.124602317810059
+10 6.127366781234741
+11 6.130992889404297
+12 6.135126829147339
+13 6.137046575546265
+14 6.144073009490967
+15 6.144519805908203
+16 6.1488869190216064
+17 6.140537977218628
+18 6.148083448410034
+19 6.1505162715911865
+20 6.150968074798584
+21 6.153724193572998
+22 6.1475746631622314
+23 6.149553060531616
+24 6.15299391746521
+Setting up [LPIPS] perceptual loss: trunk [alex], v[0.1], spatial [off]
+Loading model from: /home/greenx9/miniconda3/envs/lrp310/lib/python3.10/site-packages/lpips/weights/v0.1/alex.pth
+============================================================
+Saved test metrics to: /data2/greenx9/LRP_algo/logs/GP_20hp/drums_20hp_ourswsd_drums_t002_lr8p40e-04_mlr4p08e-03_minr0p11/test_metrics_eval.json
+Saved rendered test images to: /data2/greenx9/LRP_algo/logs/GP_20hp/drums_20hp_ourswsd_drums_t002_lr8p40e-04_mlr4p08e-03_minr0p11/testset_eval
+Saved test README to: /data2/greenx9/LRP_algo/logs/GP_20hp/drums_20hp_ourswsd_drums_t002_lr8p40e-04_mlr4p08e-03_minr0p11/README.txt
+mean_psnr : 25.81765390870081
+mean_ssim : 0.9335237503051758
+mean_lpips: 0.05313904479146004
+[TEST_METRICS] mean_psnr: 25.817654 mean_ssim: 0.933524 mean_lpips: 0.05313904479146004

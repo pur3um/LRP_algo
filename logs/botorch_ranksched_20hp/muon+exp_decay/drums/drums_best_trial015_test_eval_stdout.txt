@@ -1,0 +1,47 @@
+Loaded blender (138, 400, 400, 4) torch.Size([40, 4, 4]) [400, 400, 625.0000252084244] ./data/nerf_synthetic/drums
+Param split: Muon=20 tensors, Adam=28 tensors
+INFO: Aux sign optimizer configured. Hidden params: 20, Aux params: 28.
+Found ckpts ['/data2/greenx9/LRP_algo/logs/GP_20hp/drums_20hp_muonexp_drums_t015_lr7p54e-04_mlr5p00e-03_d189/100000.tar']
+Reloading from /data2/greenx9/LRP_algo/logs/GP_20hp/drums_20hp_muonexp_drums_t015_lr7p54e-04_mlr5p00e-03_d189/100000.tar
+Loaded optimizer_state_dict from checkpoint.
+Not ndc!
+EVAL TESTSET ONLY
+test poses shape (25, 4, 4)
+test output dir /data2/greenx9/LRP_algo/logs/GP_20hp/drums_20hp_muonexp_drums_t015_lr7p54e-04_mlr5p00e-03_d189/testset_eval
+test metrics json /data2/greenx9/LRP_algo/logs/GP_20hp/drums_20hp_muonexp_drums_t015_lr7p54e-04_mlr5p00e-03_d189/test_metrics_eval.json
+0 0.00220489501953125
+torch.Size([400, 400, 3]) torch.Size([400, 400])
+1 6.4032299518585205
+2 6.076086521148682
+3 6.081121206283569
+4 6.090025424957275
+5 6.10415244102478
+6 6.1183085441589355
+7 6.117830038070679
+8 6.12601113319397
+9 6.129443407058716
+10 6.135627031326294
+11 6.138328313827515
+12 6.139326095581055
+13 6.13624906539917
+14 6.1425700187683105
+15 6.143699645996094
+16 6.14603066444397
+17 6.148681163787842
+18 6.150808572769165
+19 6.151963710784912
+20 6.1551833152771
+21 6.16372275352478
+22 6.1629698276519775
+23 6.160014390945435
+24 6.165571451187134
+Setting up [LPIPS] perceptual loss: trunk [alex], v[0.1], spatial [off]
+Loading model from: /home/greenx9/miniconda3/envs/lrp310/lib/python3.10/site-packages/lpips/weights/v0.1/alex.pth
+============================================================
+Saved test metrics to: /data2/greenx9/LRP_algo/logs/GP_20hp/drums_20hp_muonexp_drums_t015_lr7p54e-04_mlr5p00e-03_d189/test_metrics_eval.json
+Saved rendered test images to: /data2/greenx9/LRP_algo/logs/GP_20hp/drums_20hp_muonexp_drums_t015_lr7p54e-04_mlr5p00e-03_d189/testset_eval
+Saved test README to: /data2/greenx9/LRP_algo/logs/GP_20hp/drums_20hp_muonexp_drums_t015_lr7p54e-04_mlr5p00e-03_d189/README.txt
+mean_psnr : 25.45769308279312
+mean_ssim : 0.9303433513641357
+mean_lpips: 0.05599108085036278
+[TEST_METRICS] mean_psnr: 25.457693 mean_ssim: 0.930343 mean_lpips: 0.05599108085036278

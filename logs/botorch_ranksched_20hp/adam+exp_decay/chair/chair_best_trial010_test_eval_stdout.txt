@@ -1,0 +1,46 @@
+Loaded blender (138, 400, 400, 4) torch.Size([40, 4, 4]) [400, 400, 555.5555155968841] ./data/nerf_synthetic/chair
+Param split: Muon=20 tensors, Adam=28 tensors
+Found ckpts ['/data2/greenx9/LRP_algo/logs/GP_20hp/chair_20hp_adamexp_chair_t010_lr4p92e-04_d421/100000.tar']
+Reloading from /data2/greenx9/LRP_algo/logs/GP_20hp/chair_20hp_adamexp_chair_t010_lr4p92e-04_d421/100000.tar
+Loaded optimizer_state_dict from checkpoint.
+Not ndc!
+EVAL TESTSET ONLY
+test poses shape (25, 4, 4)
+test output dir /data2/greenx9/LRP_algo/logs/GP_20hp/chair_20hp_adamexp_chair_t010_lr4p92e-04_d421/testset_eval
+test metrics json /data2/greenx9/LRP_algo/logs/GP_20hp/chair_20hp_adamexp_chair_t010_lr4p92e-04_d421/test_metrics_eval.json
+0 0.002355337142944336
+torch.Size([400, 400, 3]) torch.Size([400, 400])
+1 14.077723026275635
+2 13.715169668197632
+3 13.981921434402466
+4 14.080998659133911
+5 13.909559488296509
+6 13.880774021148682
+7 13.916526317596436
+8 13.596530199050903
+9 13.869742393493652
+10 13.858254432678223
+11 13.869649171829224
+12 13.927402257919312
+13 13.897119283676147
+14 13.807234525680542
+15 13.506166458129883
+16 13.783303499221802
+17 13.831235408782959
+18 13.808789491653442
+19 13.755332946777344
+20 13.822046518325806
+21 13.681032657623291
+22 13.818653345108032
+23 13.78724217414856
+24 13.826669454574585
+Setting up [LPIPS] perceptual loss: trunk [alex], v[0.1], spatial [off]
+Loading model from: /home/greenx9/miniconda3/envs/lrp310/lib/python3.10/site-packages/lpips/weights/v0.1/alex.pth
+============================================================
+Saved test metrics to: /data2/greenx9/LRP_algo/logs/GP_20hp/chair_20hp_adamexp_chair_t010_lr4p92e-04_d421/test_metrics_eval.json
+Saved rendered test images to: /data2/greenx9/LRP_algo/logs/GP_20hp/chair_20hp_adamexp_chair_t010_lr4p92e-04_d421/testset_eval
+Saved test README to: /data2/greenx9/LRP_algo/logs/GP_20hp/chair_20hp_adamexp_chair_t010_lr4p92e-04_d421/README.txt
+mean_psnr : 32.53329953427868
+mean_ssim : 0.9682739233970642
+mean_lpips: 0.02523998834192753
+[TEST_METRICS] mean_psnr: 32.533300 mean_ssim: 0.968274 mean_lpips: 0.02523998834192753
